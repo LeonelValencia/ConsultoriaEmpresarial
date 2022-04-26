@@ -205,6 +205,7 @@ Partial Class RegistrarCliente
         Me.Controls.Add(Me.txtNombreCliente)
         Me.Controls.Add(Me.Label1)
         Me.Name = "RegistrarCliente"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "RegistrarCliente"
         Me.ResumeLayout(False)
         Me.PerformLayout()

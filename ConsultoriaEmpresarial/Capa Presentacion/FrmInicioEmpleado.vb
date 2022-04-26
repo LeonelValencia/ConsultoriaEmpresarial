@@ -59,4 +59,19 @@ Public Class FrmInicioEmpleado
         main.Show()
         Me.Hide()
     End Sub
+
+    Private Sub OrdenSalidaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OrdenSalidaToolStripMenuItem.Click
+        OrdenSalida.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub ConsultarOTToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ConsultarOTToolStripMenuItem.Click
+        ConsultarOT.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub ProgramarOTToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProgramarOTToolStripMenuItem.Click
+        ProgramarOT.Show()
+        Me.Hide()
+    End Sub
 End Class

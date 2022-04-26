@@ -181,6 +181,7 @@ Partial Class Iniciar_sesion
         Me.Controls.Add(Me.Label2)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Iniciar_sesion"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Iniciar_sesion"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

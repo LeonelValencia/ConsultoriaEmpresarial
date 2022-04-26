@@ -117,6 +117,7 @@ Partial Class FrmQuejasAsesor
         Me.Controls.Add(Me.Label2)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FrmQuejasAsesor"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmQuejasAsesor"
         CType(Me.dgvQuejas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

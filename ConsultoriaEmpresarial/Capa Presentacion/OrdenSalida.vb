@@ -21,7 +21,7 @@ Public Class OrdenSalida
         End Try
     End Sub
     Private Sub OrdenSalida_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        Main2SesionIniciada.Show()
+        FrmInicioEmpleado.Show()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click

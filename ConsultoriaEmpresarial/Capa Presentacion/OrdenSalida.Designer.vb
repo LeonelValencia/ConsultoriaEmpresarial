@@ -36,9 +36,10 @@ Partial Class OrdenSalida
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(162, 35)
+        Me.Label1.Location = New System.Drawing.Point(216, 43)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(81, 13)
+        Me.Label1.Size = New System.Drawing.Size(103, 16)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Orden de salida"
         '
@@ -46,25 +47,28 @@ Partial Class OrdenSalida
         '
         Me.cbPago.FormattingEnabled = True
         Me.cbPago.Items.AddRange(New Object() {"Si", "No"})
-        Me.cbPago.Location = New System.Drawing.Point(214, 150)
+        Me.cbPago.Location = New System.Drawing.Point(285, 185)
+        Me.cbPago.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbPago.Name = "cbPago"
-        Me.cbPago.Size = New System.Drawing.Size(75, 21)
+        Me.cbPago.Size = New System.Drawing.Size(99, 24)
         Me.cbPago.TabIndex = 1
         '
         'txtIdOT
         '
         Me.txtIdOT.ForeColor = System.Drawing.SystemColors.InactiveCaption
-        Me.txtIdOT.Location = New System.Drawing.Point(165, 54)
+        Me.txtIdOT.Location = New System.Drawing.Point(220, 66)
+        Me.txtIdOT.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtIdOT.Name = "txtIdOT"
-        Me.txtIdOT.Size = New System.Drawing.Size(201, 20)
+        Me.txtIdOT.Size = New System.Drawing.Size(267, 22)
         Me.txtIdOT.TabIndex = 2
         Me.txtIdOT.Text = "Id de la OT"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(122, 191)
+        Me.Button1.Location = New System.Drawing.Point(163, 235)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(142, 27)
+        Me.Button1.Size = New System.Drawing.Size(189, 33)
         Me.Button1.TabIndex = 5
         Me.Button1.Text = "Generar"
         Me.Button1.UseVisualStyleBackColor = True
@@ -72,51 +76,56 @@ Partial Class OrdenSalida
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(119, 153)
+        Me.Label2.Location = New System.Drawing.Point(159, 188)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(89, 13)
+        Me.Label2.Size = New System.Drawing.Size(113, 16)
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "¿Pago realizado?"
         '
         'CbNameCliente
         '
         Me.CbNameCliente.FormattingEnabled = True
-        Me.CbNameCliente.Location = New System.Drawing.Point(165, 80)
+        Me.CbNameCliente.Location = New System.Drawing.Point(220, 98)
+        Me.CbNameCliente.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CbNameCliente.Name = "CbNameCliente"
-        Me.CbNameCliente.Size = New System.Drawing.Size(201, 21)
+        Me.CbNameCliente.Size = New System.Drawing.Size(267, 24)
         Me.CbNameCliente.TabIndex = 7
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(64, 83)
+        Me.Label3.Location = New System.Drawing.Point(85, 102)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(39, 13)
+        Me.Label3.Size = New System.Drawing.Size(48, 16)
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "Cliente"
         '
         'CBNamePersonal
         '
         Me.CBNamePersonal.FormattingEnabled = True
-        Me.CBNamePersonal.Location = New System.Drawing.Point(165, 107)
+        Me.CBNamePersonal.Location = New System.Drawing.Point(220, 132)
+        Me.CBNamePersonal.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CBNamePersonal.Name = "CBNamePersonal"
-        Me.CBNamePersonal.Size = New System.Drawing.Size(201, 21)
+        Me.CBNamePersonal.Size = New System.Drawing.Size(267, 24)
         Me.CBNamePersonal.TabIndex = 9
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(64, 110)
+        Me.Label4.Location = New System.Drawing.Point(85, 135)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(95, 13)
+        Me.Label4.Size = New System.Drawing.Size(122, 16)
         Me.Label4.TabIndex = 10
         Me.Label4.Text = "Personal Asignado"
         '
         'OrdenSalida
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(452, 268)
+        Me.ClientSize = New System.Drawing.Size(603, 330)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.CBNamePersonal)
         Me.Controls.Add(Me.Label3)
@@ -126,7 +135,9 @@ Partial Class OrdenSalida
         Me.Controls.Add(Me.txtIdOT)
         Me.Controls.Add(Me.cbPago)
         Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "OrdenSalida"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "OrdenSalida"
         Me.ResumeLayout(False)
         Me.PerformLayout()

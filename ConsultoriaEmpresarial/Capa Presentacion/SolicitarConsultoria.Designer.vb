@@ -125,6 +125,7 @@ Partial Class SolicitarConsultoria
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label2)
         Me.Name = "SolicitarConsultoria"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "SolicitarConsultoria"
         Me.ResumeLayout(False)
         Me.PerformLayout()

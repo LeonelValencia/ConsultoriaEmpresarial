@@ -264,6 +264,7 @@ Partial Class FrmActualizarClienteAdm
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "FrmActualizarClienteAdm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmActualizarClienteAdm"
         CType(Me.dgvConsultarClientes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

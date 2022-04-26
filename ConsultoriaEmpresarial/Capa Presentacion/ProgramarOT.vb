@@ -18,7 +18,7 @@ Public Class ProgramarOT
         Next
     End Sub
     Private Sub ProgramarOT_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        Main2SesionIniciada.Show()
+        FrmInicioEmpleado.Show()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click

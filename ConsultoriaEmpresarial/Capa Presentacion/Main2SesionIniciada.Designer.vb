@@ -24,15 +24,13 @@ Partial Class Main2SesionIniciada
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main2SesionIniciada))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.OrdenDeSalidaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ProgramarOTToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ConsultarOTsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SolicitarConsultoriaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PresupuestoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ModificarDatosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EliminarMiCuentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.QuejasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SeguimientoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SobreNosotrosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NotificacionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -40,8 +38,6 @@ Partial Class Main2SesionIniciada
         Me.CerrarSesionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdClienteMain = New System.Windows.Forms.TextBox()
-        Me.QuejasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SeguimientoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -50,38 +46,12 @@ Partial Class Main2SesionIniciada
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.ControlDark
         Me.MenuStrip1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReportesToolStripMenuItem, Me.UsuarioToolStripMenuItem, Me.SobreNosotrosToolStripMenuItem, Me.AyudaToolStripMenuItem, Me.NotificacionesToolStripMenuItem, Me.NombreDeUsuarioToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsuarioToolStripMenuItem, Me.SobreNosotrosToolStripMenuItem, Me.AyudaToolStripMenuItem, Me.NotificacionesToolStripMenuItem, Me.NombreDeUsuarioToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(882, 36)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
-        '
-        'ReportesToolStripMenuItem
-        '
-        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OrdenDeSalidaToolStripMenuItem, Me.ProgramarOTToolStripMenuItem, Me.ConsultarOTsToolStripMenuItem})
-        Me.ReportesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
-        Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(103, 32)
-        Me.ReportesToolStripMenuItem.Text = "Reportes"
-        '
-        'OrdenDeSalidaToolStripMenuItem
-        '
-        Me.OrdenDeSalidaToolStripMenuItem.Name = "OrdenDeSalidaToolStripMenuItem"
-        Me.OrdenDeSalidaToolStripMenuItem.Size = New System.Drawing.Size(235, 32)
-        Me.OrdenDeSalidaToolStripMenuItem.Text = "Orden de salida"
-        '
-        'ProgramarOTToolStripMenuItem
-        '
-        Me.ProgramarOTToolStripMenuItem.Name = "ProgramarOTToolStripMenuItem"
-        Me.ProgramarOTToolStripMenuItem.Size = New System.Drawing.Size(235, 32)
-        Me.ProgramarOTToolStripMenuItem.Text = "Programar OT"
-        '
-        'ConsultarOTsToolStripMenuItem
-        '
-        Me.ConsultarOTsToolStripMenuItem.Name = "ConsultarOTsToolStripMenuItem"
-        Me.ConsultarOTsToolStripMenuItem.Size = New System.Drawing.Size(235, 32)
-        Me.ConsultarOTsToolStripMenuItem.Text = "Consultar OT's"
         '
         'UsuarioToolStripMenuItem
         '
@@ -114,6 +84,18 @@ Partial Class Main2SesionIniciada
         Me.EliminarMiCuentaToolStripMenuItem.Name = "EliminarMiCuentaToolStripMenuItem"
         Me.EliminarMiCuentaToolStripMenuItem.Size = New System.Drawing.Size(271, 32)
         Me.EliminarMiCuentaToolStripMenuItem.Text = "Eliminar mi cuenta"
+        '
+        'QuejasToolStripMenuItem
+        '
+        Me.QuejasToolStripMenuItem.Name = "QuejasToolStripMenuItem"
+        Me.QuejasToolStripMenuItem.Size = New System.Drawing.Size(271, 32)
+        Me.QuejasToolStripMenuItem.Text = "Quejas"
+        '
+        'SeguimientoToolStripMenuItem
+        '
+        Me.SeguimientoToolStripMenuItem.Name = "SeguimientoToolStripMenuItem"
+        Me.SeguimientoToolStripMenuItem.Size = New System.Drawing.Size(271, 32)
+        Me.SeguimientoToolStripMenuItem.Text = "Seguimiento"
         '
         'SobreNosotrosToolStripMenuItem
         '
@@ -164,18 +146,6 @@ Partial Class Main2SesionIniciada
         Me.txtIdClienteMain.Size = New System.Drawing.Size(100, 22)
         Me.txtIdClienteMain.TabIndex = 2
         '
-        'QuejasToolStripMenuItem
-        '
-        Me.QuejasToolStripMenuItem.Name = "QuejasToolStripMenuItem"
-        Me.QuejasToolStripMenuItem.Size = New System.Drawing.Size(271, 32)
-        Me.QuejasToolStripMenuItem.Text = "Quejas"
-        '
-        'SeguimientoToolStripMenuItem
-        '
-        Me.SeguimientoToolStripMenuItem.Name = "SeguimientoToolStripMenuItem"
-        Me.SeguimientoToolStripMenuItem.Size = New System.Drawing.Size(271, 32)
-        Me.SeguimientoToolStripMenuItem.Text = "Seguimiento"
-        '
         'Main2SesionIniciada
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -186,6 +156,7 @@ Partial Class Main2SesionIniciada
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Main2SesionIniciada"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Main2SesionIniciada"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
@@ -195,10 +166,6 @@ Partial Class Main2SesionIniciada
     End Sub
 
     Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents ReportesToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents OrdenDeSalidaToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ProgramarOTToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ConsultarOTsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents UsuarioToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SolicitarConsultoriaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PresupuestoToolStripMenuItem As ToolStripMenuItem

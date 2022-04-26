@@ -136,6 +136,7 @@ Partial Class FrmAsignarPresupuesto
         Me.Controls.Add(Me.dgvNece)
         Me.Controls.Add(Me.Label1)
         Me.Name = "FrmAsignarPresupuesto"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmAsignarPresupuesto"
         CType(Me.dgvNece, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

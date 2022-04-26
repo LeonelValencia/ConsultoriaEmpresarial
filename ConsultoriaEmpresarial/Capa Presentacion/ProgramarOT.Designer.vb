@@ -68,7 +68,7 @@ Partial Class ProgramarOT
         'DateProgramada
         '
         Me.DateProgramada.Location = New System.Drawing.Point(4, 299)
-        Me.DateProgramada.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DateProgramada.Margin = New System.Windows.Forms.Padding(4)
         Me.DateProgramada.Name = "DateProgramada"
         Me.DateProgramada.Size = New System.Drawing.Size(265, 22)
         Me.DateProgramada.TabIndex = 4
@@ -97,7 +97,7 @@ Partial Class ProgramarOT
         '
         Me.CbAnalista.FormattingEnabled = True
         Me.CbAnalista.Location = New System.Drawing.Point(333, 298)
-        Me.CbAnalista.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.CbAnalista.Margin = New System.Windows.Forms.Padding(4)
         Me.CbAnalista.Name = "CbAnalista"
         Me.CbAnalista.Size = New System.Drawing.Size(160, 24)
         Me.CbAnalista.TabIndex = 7
@@ -105,7 +105,7 @@ Partial Class ProgramarOT
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(543, 299)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(143, 28)
         Me.Button1.TabIndex = 8
@@ -115,7 +115,7 @@ Partial Class ProgramarOT
         'txtMateriales
         '
         Me.txtMateriales.Location = New System.Drawing.Point(4, 80)
-        Me.txtMateriales.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtMateriales.Margin = New System.Windows.Forms.Padding(4)
         Me.txtMateriales.Multiline = True
         Me.txtMateriales.Name = "txtMateriales"
         Me.txtMateriales.Size = New System.Drawing.Size(195, 164)
@@ -124,7 +124,7 @@ Partial Class ProgramarOT
         'txtCliente
         '
         Me.txtCliente.Location = New System.Drawing.Point(241, 80)
-        Me.txtCliente.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtCliente.Margin = New System.Windows.Forms.Padding(4)
         Me.txtCliente.Multiline = True
         Me.txtCliente.Name = "txtCliente"
         Me.txtCliente.Size = New System.Drawing.Size(201, 164)
@@ -133,7 +133,7 @@ Partial Class ProgramarOT
         'txtEmpleado
         '
         Me.txtEmpleado.Location = New System.Drawing.Point(485, 80)
-        Me.txtEmpleado.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtEmpleado.Margin = New System.Windows.Forms.Padding(4)
         Me.txtEmpleado.Multiline = True
         Me.txtEmpleado.Name = "txtEmpleado"
         Me.txtEmpleado.Size = New System.Drawing.Size(199, 164)
@@ -155,8 +155,9 @@ Partial Class ProgramarOT
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "ProgramarOT"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ProgramarOT"
         Me.ResumeLayout(False)
         Me.PerformLayout()

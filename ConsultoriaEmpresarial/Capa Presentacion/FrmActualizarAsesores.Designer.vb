@@ -209,6 +209,7 @@ Partial Class FrmActualizarAsesores
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.dgvConsultores)
         Me.Name = "FrmActualizarAsesores"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmActualizarAsesores"
         CType(Me.dgvConsultores, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

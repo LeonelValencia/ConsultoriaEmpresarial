@@ -228,6 +228,7 @@ Partial Class FrmInsertarClienteAdmin
         Me.Controls.Add(Me.btnRegistrarCliente)
         Me.Controls.Add(Me.Label1)
         Me.Name = "FrmInsertarClienteAdmin"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmInsertarClienteAdmin"
         CType(Me.dgvConsultarClientes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

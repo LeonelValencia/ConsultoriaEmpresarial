@@ -105,6 +105,7 @@ Partial Class FrmEliminarClientesAdm
         Me.Controls.Add(Me.dgvConsultarClientes)
         Me.Controls.Add(Me.Label1)
         Me.Name = "FrmEliminarClientesAdm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmEliminarClientesAdm"
         CType(Me.dgvConsultarClientes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

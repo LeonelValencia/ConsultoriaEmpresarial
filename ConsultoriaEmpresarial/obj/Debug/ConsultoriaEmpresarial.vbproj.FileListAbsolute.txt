@@ -55,3 +55,4 @@ C:\Users\valen\source\repos\ConsultoriaEmpresarial\ConsultoriaEmpresarial\obj\De
 C:\Users\valen\source\repos\ConsultoriaEmpresarial\ConsultoriaEmpresarial\obj\Debug\ConsultoriaEmpresarial.FrmQuejasAsesor.resources
 C:\Users\valen\source\repos\ConsultoriaEmpresarial\ConsultoriaEmpresarial\obj\Debug\ConsultoriaEmpresarial.FrmSeguimientoAsesor.resources
 C:\Users\valen\source\repos\ConsultoriaEmpresarial\ConsultoriaEmpresarial\obj\Debug\ConsultoriaEmpresarial.FrmSeguimientoVisualizar.resources
+C:\Users\valen\source\repos\ConsultoriaEmpresarial\ConsultoriaEmpresarial\obj\Debug\ConsultoriaEmpresarial.FrmAyuda.resources

@@ -62,6 +62,7 @@ Partial Class FrmRecuperarContraseña
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label1)
         Me.Name = "FrmRecuperarContraseña"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Recuperar contraseña"
         Me.ResumeLayout(False)
         Me.PerformLayout()

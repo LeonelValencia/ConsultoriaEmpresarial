@@ -10,7 +10,7 @@ Public Class ConsultarOT
         End Try
     End Sub
     Private Sub ConsultarOT_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        Main2SesionIniciada.Show()
+        FrmInicioEmpleado.Show()
     End Sub
 
     Private Sub ConsultarOT_Load(sender As Object, e As EventArgs) Handles MyBase.Load

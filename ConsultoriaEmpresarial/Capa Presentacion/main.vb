@@ -5,17 +5,17 @@ Public Class main
         Me.Hide()
     End Sub
 
-    Private Sub OrdenDeSalidaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OrdenDeSalidaToolStripMenuItem.Click
+    Private Sub OrdenDeSalidaToolStripMenuItem_Click(sender As Object, e As EventArgs) 
         Iniciar_sesion.Show()
         Me.Hide()
     End Sub
 
-    Private Sub ProgramarOTToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProgramarOTToolStripMenuItem.Click
+    Private Sub ProgramarOTToolStripMenuItem_Click(sender As Object, e As EventArgs) 
         Iniciar_sesion.Show()
         Me.Hide()
     End Sub
 
-    Private Sub ConsultarOTsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ConsultarOTsToolStripMenuItem.Click
+    Private Sub ConsultarOTsToolStripMenuItem_Click(sender As Object, e As EventArgs) 
         Iniciar_sesion.Show()
         Me.Hide()
     End Sub
@@ -62,6 +62,11 @@ Public Class main
 
     Private Sub SeguimientoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SeguimientoToolStripMenuItem.Click
         Iniciar_sesion.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub RegistrateToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RegistrateToolStripMenuItem.Click
+        RegistrarCliente.Show()
         Me.Hide()
     End Sub
 End Class

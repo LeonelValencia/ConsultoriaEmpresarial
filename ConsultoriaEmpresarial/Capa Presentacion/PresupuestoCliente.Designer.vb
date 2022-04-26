@@ -215,6 +215,7 @@ Partial Class PresupuestoCliente
         Me.Controls.Add(Me.btnEnviarSolConsultoria)
         Me.Controls.Add(Me.Label2)
         Me.Name = "PresupuestoCliente"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "PresupuestoCliente"
         Me.ResumeLayout(False)
         Me.PerformLayout()

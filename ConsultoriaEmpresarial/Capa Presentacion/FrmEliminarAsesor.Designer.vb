@@ -103,6 +103,7 @@ Partial Class FrmEliminarAsesor
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.dgvConsultores)
         Me.Name = "FrmEliminarAsesor"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmEliminarAsesor"
         CType(Me.dgvConsultores, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

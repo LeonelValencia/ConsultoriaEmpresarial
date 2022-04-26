@@ -131,6 +131,7 @@ Partial Class FrmAsignarAsesor
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.dgvAsesorCliente)
         Me.Name = "FrmAsignarAsesor"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmAsignarAsesor"
         CType(Me.dgvAsesorCliente, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

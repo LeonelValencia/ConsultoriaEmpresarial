@@ -21,17 +21,17 @@ Public Class Main2SesionIniciada
         Me.Hide()
     End Sub
 
-    Private Sub OrdenDeSalidaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OrdenDeSalidaToolStripMenuItem.Click
+    Private Sub OrdenDeSalidaToolStripMenuItem_Click(sender As Object, e As EventArgs) 
         OrdenSalida.Show()
         Me.Hide()
     End Sub
 
-    Private Sub ProgramarOTToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProgramarOTToolStripMenuItem.Click
+    Private Sub ProgramarOTToolStripMenuItem_Click(sender As Object, e As EventArgs) 
         ProgramarOT.Show()
         Me.Hide()
     End Sub
 
-    Private Sub ConsultarOTsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ConsultarOTsToolStripMenuItem.Click
+    Private Sub ConsultarOTsToolStripMenuItem_Click(sender As Object, e As EventArgs) 
         ConsultarOT.Show()
         Me.Hide()
     End Sub

@@ -238,6 +238,7 @@ Partial Class ModificarDatosCliente
         Me.Controls.Add(Me.txtNombreCliente)
         Me.Controls.Add(Me.Label1)
         Me.Name = "ModificarDatosCliente"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ModificarDatosCliente"
         Me.ResumeLayout(False)
         Me.PerformLayout()

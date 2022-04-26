@@ -36,6 +36,10 @@ Partial Class FrmInicioEmpleado
         Me.ActualizarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EliminarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AsignarAClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OTToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OrdenSalidaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ConsultarOTToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ProgramarOTToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.nameUsuarioTSMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CerrarSesionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
@@ -44,10 +48,10 @@ Partial Class FrmInicioEmpleado
         'MenuStrip1
         '
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClientesToolStripMenuItem, Me.ConsultoriaToolStripMenuItem, Me.AsesoresToolStripMenuItem, Me.nameUsuarioTSMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClientesToolStripMenuItem, Me.ConsultoriaToolStripMenuItem, Me.AsesoresToolStripMenuItem, Me.OTToolStripMenuItem, Me.nameUsuarioTSMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 30)
+        Me.MenuStrip1.Size = New System.Drawing.Size(800, 28)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -55,7 +59,7 @@ Partial Class FrmInicioEmpleado
         '
         Me.ClientesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RegistrarClienteToolStripMenuItem, Me.ActualizarClienteToolStripMenuItem, Me.EliminarClienteToolStripMenuItem})
         Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
-        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(75, 26)
+        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(75, 24)
         Me.ClientesToolStripMenuItem.Text = "Clientes"
         '
         'RegistrarClienteToolStripMenuItem
@@ -80,7 +84,7 @@ Partial Class FrmInicioEmpleado
         '
         Me.ConsultoriaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AsignarPresupuestoToolStripMenuItem, Me.SeguimientoToolStripMenuItem, Me.QuejasToolStripMenuItem})
         Me.ConsultoriaToolStripMenuItem.Name = "ConsultoriaToolStripMenuItem"
-        Me.ConsultoriaToolStripMenuItem.Size = New System.Drawing.Size(98, 26)
+        Me.ConsultoriaToolStripMenuItem.Size = New System.Drawing.Size(98, 24)
         Me.ConsultoriaToolStripMenuItem.Text = "Consultoria"
         '
         'AsignarPresupuestoToolStripMenuItem
@@ -105,7 +109,7 @@ Partial Class FrmInicioEmpleado
         '
         Me.AsesoresToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarAsesorToolStripMenuItem, Me.ActualizarToolStripMenuItem, Me.EliminarToolStripMenuItem, Me.AsignarAClienteToolStripMenuItem})
         Me.AsesoresToolStripMenuItem.Name = "AsesoresToolStripMenuItem"
-        Me.AsesoresToolStripMenuItem.Size = New System.Drawing.Size(81, 26)
+        Me.AsesoresToolStripMenuItem.Size = New System.Drawing.Size(81, 24)
         Me.AsesoresToolStripMenuItem.Text = "Asesores"
         '
         'AgregarAsesorToolStripMenuItem
@@ -132,17 +136,42 @@ Partial Class FrmInicioEmpleado
         Me.AsignarAClienteToolStripMenuItem.Size = New System.Drawing.Size(202, 26)
         Me.AsignarAClienteToolStripMenuItem.Text = "Asignar a cliente"
         '
+        'OTToolStripMenuItem
+        '
+        Me.OTToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OrdenSalidaToolStripMenuItem, Me.ConsultarOTToolStripMenuItem, Me.ProgramarOTToolStripMenuItem})
+        Me.OTToolStripMenuItem.Name = "OTToolStripMenuItem"
+        Me.OTToolStripMenuItem.Size = New System.Drawing.Size(41, 24)
+        Me.OTToolStripMenuItem.Text = "OT"
+        '
+        'OrdenSalidaToolStripMenuItem
+        '
+        Me.OrdenSalidaToolStripMenuItem.Name = "OrdenSalidaToolStripMenuItem"
+        Me.OrdenSalidaToolStripMenuItem.Size = New System.Drawing.Size(184, 26)
+        Me.OrdenSalidaToolStripMenuItem.Text = "Orden Salida"
+        '
+        'ConsultarOTToolStripMenuItem
+        '
+        Me.ConsultarOTToolStripMenuItem.Name = "ConsultarOTToolStripMenuItem"
+        Me.ConsultarOTToolStripMenuItem.Size = New System.Drawing.Size(184, 26)
+        Me.ConsultarOTToolStripMenuItem.Text = "Consultar OT"
+        '
+        'ProgramarOTToolStripMenuItem
+        '
+        Me.ProgramarOTToolStripMenuItem.Name = "ProgramarOTToolStripMenuItem"
+        Me.ProgramarOTToolStripMenuItem.Size = New System.Drawing.Size(184, 26)
+        Me.ProgramarOTToolStripMenuItem.Text = "Programar OT"
+        '
         'nameUsuarioTSMenuItem
         '
         Me.nameUsuarioTSMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CerrarSesionToolStripMenuItem})
         Me.nameUsuarioTSMenuItem.Name = "nameUsuarioTSMenuItem"
-        Me.nameUsuarioTSMenuItem.Size = New System.Drawing.Size(73, 26)
+        Me.nameUsuarioTSMenuItem.Size = New System.Drawing.Size(73, 24)
         Me.nameUsuarioTSMenuItem.Text = "Usuario"
         '
         'CerrarSesionToolStripMenuItem
         '
         Me.CerrarSesionToolStripMenuItem.Name = "CerrarSesionToolStripMenuItem"
-        Me.CerrarSesionToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.CerrarSesionToolStripMenuItem.Size = New System.Drawing.Size(179, 26)
         Me.CerrarSesionToolStripMenuItem.Text = "Cerrar Sesion"
         '
         'FrmInicioEmpleado
@@ -153,6 +182,7 @@ Partial Class FrmInicioEmpleado
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "FrmInicioEmpleado"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmInicioEmpleado"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
@@ -177,4 +207,8 @@ Partial Class FrmInicioEmpleado
     Friend WithEvents SeguimientoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents QuejasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CerrarSesionToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents OTToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents OrdenSalidaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ConsultarOTToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ProgramarOTToolStripMenuItem As ToolStripMenuItem
 End Class

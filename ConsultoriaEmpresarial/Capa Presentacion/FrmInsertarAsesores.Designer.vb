@@ -175,6 +175,7 @@ Partial Class FrmInsertarAsesores
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.dgvConsultores)
         Me.Name = "FrmInsertarAsesores"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "s"
         CType(Me.dgvConsultores, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

@@ -34,19 +34,18 @@ Partial Class FrmSeguimientoAsesor
         '
         'txtIdCliente
         '
-        Me.txtIdCliente.Location = New System.Drawing.Point(152, 82)
-        Me.txtIdCliente.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtIdCliente.Location = New System.Drawing.Point(203, 101)
+        Me.txtIdCliente.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtIdCliente.Name = "txtIdCliente"
-        Me.txtIdCliente.Size = New System.Drawing.Size(76, 20)
+        Me.txtIdCliente.Size = New System.Drawing.Size(100, 22)
         Me.txtIdCliente.TabIndex = 19
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(94, 85)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Location = New System.Drawing.Point(125, 105)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(59, 13)
+        Me.Label4.Size = New System.Drawing.Size(71, 16)
         Me.Label4.TabIndex = 18
         Me.Label4.Text = "ID Cliente="
         '
@@ -55,20 +54,20 @@ Partial Class FrmSeguimientoAsesor
         Me.BtnEnviarSolConsultoria.BackColor = System.Drawing.SystemColors.HotTrack
         Me.BtnEnviarSolConsultoria.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnEnviarSolConsultoria.ForeColor = System.Drawing.SystemColors.Control
-        Me.BtnEnviarSolConsultoria.Location = New System.Drawing.Point(130, 333)
-        Me.BtnEnviarSolConsultoria.Margin = New System.Windows.Forms.Padding(2)
+        Me.BtnEnviarSolConsultoria.Location = New System.Drawing.Point(173, 410)
+        Me.BtnEnviarSolConsultoria.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnEnviarSolConsultoria.Name = "BtnEnviarSolConsultoria"
-        Me.BtnEnviarSolConsultoria.Size = New System.Drawing.Size(221, 35)
+        Me.BtnEnviarSolConsultoria.Size = New System.Drawing.Size(295, 43)
         Me.BtnEnviarSolConsultoria.TabIndex = 16
         Me.BtnEnviarSolConsultoria.Text = "Enviar"
         Me.BtnEnviarSolConsultoria.UseVisualStyleBackColor = False
         '
         'rtxtSeguimiento
         '
-        Me.rtxtSeguimiento.Location = New System.Drawing.Point(105, 147)
-        Me.rtxtSeguimiento.Margin = New System.Windows.Forms.Padding(2)
+        Me.rtxtSeguimiento.Location = New System.Drawing.Point(140, 181)
+        Me.rtxtSeguimiento.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.rtxtSeguimiento.Name = "rtxtSeguimiento"
-        Me.rtxtSeguimiento.Size = New System.Drawing.Size(281, 164)
+        Me.rtxtSeguimiento.Size = New System.Drawing.Size(373, 201)
         Me.rtxtSeguimiento.TabIndex = 14
         Me.rtxtSeguimiento.Text = ""
         '
@@ -76,9 +75,10 @@ Partial Class FrmSeguimientoAsesor
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(101, 108)
+        Me.Label1.Location = New System.Drawing.Point(135, 133)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(265, 20)
+        Me.Label1.Size = New System.Drawing.Size(323, 25)
         Me.Label1.TabIndex = 13
         Me.Label1.Text = "Datos relevantes a tomas en cuenta"
         '
@@ -87,35 +87,35 @@ Partial Class FrmSeguimientoAsesor
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label2.Location = New System.Drawing.Point(81, 9)
+        Me.Label2.Location = New System.Drawing.Point(108, 11)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(366, 42)
+        Me.Label2.Size = New System.Drawing.Size(460, 54)
         Me.Label2.TabIndex = 12
         Me.Label2.Text = "Guardar seguimiento"
         '
         'txtIdAsesor
         '
-        Me.txtIdAsesor.Location = New System.Drawing.Point(152, 53)
-        Me.txtIdAsesor.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtIdAsesor.Location = New System.Drawing.Point(203, 65)
+        Me.txtIdAsesor.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtIdAsesor.Name = "txtIdAsesor"
-        Me.txtIdAsesor.Size = New System.Drawing.Size(76, 20)
+        Me.txtIdAsesor.Size = New System.Drawing.Size(100, 22)
         Me.txtIdAsesor.TabIndex = 21
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(94, 56)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(125, 69)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(59, 13)
+        Me.Label3.Size = New System.Drawing.Size(73, 16)
         Me.Label3.TabIndex = 20
         Me.Label3.Text = "ID Asesor="
         '
         'FrmSeguimientoAsesor
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(549, 394)
+        Me.ClientSize = New System.Drawing.Size(732, 485)
         Me.Controls.Add(Me.txtIdAsesor)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.txtIdCliente)
@@ -124,7 +124,9 @@ Partial Class FrmSeguimientoAsesor
         Me.Controls.Add(Me.rtxtSeguimiento)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label2)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "FrmSeguimientoAsesor"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         Me.ResumeLayout(False)
         Me.PerformLayout()
