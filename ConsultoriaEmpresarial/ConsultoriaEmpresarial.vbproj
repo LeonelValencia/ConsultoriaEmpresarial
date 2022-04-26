@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3172594D-29B5-402F-B73E-77C0756AE517}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ConsultoriaEmpresarial.My.MyApplication</StartupObject>
+    <RootNamespace>ConsultoriaEmpresarial</RootNamespace>
+    <AssemblyName>ConsultoriaEmpresarial</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ConsultoriaEmpresarial.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ConsultoriaEmpresarial.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\Documents\Ingenieria de software\proyecto Consultoria\mysql-connector-net-8.0.25-noinstall\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.EntityFramework">
+      <HintPath>..\..\..\..\Documents\Ingenieria de software\proyecto Consultoria\mysql-connector-net-8.0.25-noinstall\v4.5.2\MySql.Data.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web">
+      <HintPath>..\..\..\..\Documents\Ingenieria de software\proyecto Consultoria\mysql-connector-net-8.0.25-noinstall\v4.5.2\MySql.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Capa Datos\Conexion.vb" />
+    <Compile Include="Capa Datos\DClientes.vb" />
+    <Compile Include="Capa Datos\DEmpleado.vb" />
+    <Compile Include="Capa Datos\DOT.vb" />
+    <Compile Include="Capa Datos\DQuejas.vb" />
+    <Compile Include="Capa Datos\DSeguimiento.vb" />
+    <Compile Include="Capa Datos\DSolConsultoria.vb" />
+    <Compile Include="Capa Logica\LClientes.vb" />
+    <Compile Include="Capa Logica\LEmpleados.vb" />
+    <Compile Include="Capa Logica\LOT.vb" />
+    <Compile Include="Capa Logica\LQuejas.vb" />
+    <Compile Include="Capa Logica\LSeguimientos.vb" />
+    <Compile Include="Capa Logica\LSolConsul.vb" />
+    <Compile Include="Capa Presentacion\ConsultarOT.Designer.vb">
+      <DependentUpon>ConsultarOT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capa Presentacion\ConsultarOT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa Presentacion\EliminarCliente.Designer.vb">
+      <DependentUpon>EliminarCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capa Presentacion\EliminarCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmAcercaDe.Designer.vb">
+      <DependentUpon>FrmAcercaDe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmAcercaDe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmActualizarAsesores.Designer.vb">
+      <DependentUpon>FrmActualizarAsesores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmActualizarAsesores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmActualizarClienteAdm.Designer.vb">
+      <DependentUpon>FrmActualizarClienteAdm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmActualizarClienteAdm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmAsignarAsesor.Designer.vb">
+      <DependentUpon>FrmAsignarAsesor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmAsignarAsesor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmAsignarPresupuesto.Designer.vb">
+      <DependentUpon>FrmAsignarPresupuesto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmAsignarPresupuesto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmEliminarAsesor.Designer.vb">
+      <DependentUpon>FrmEliminarAsesor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmEliminarAsesor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmEliminarClientesAdm.Designer.vb">
+      <DependentUpon>FrmEliminarClientesAdm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmEliminarClientesAdm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmIniciarsesionEmpleado.Designer.vb">
+      <DependentUpon>FrmIniciarsesionEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmIniciarsesionEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmInicioEmpleado.Designer.vb">
+      <DependentUpon>FrmInicioEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmInicioEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmInsertarAsesores.Designer.vb">
+      <DependentUpon>FrmInsertarAsesores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmInsertarAsesores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmInsertarClienteAdmin.Designer.vb">
+      <DependentUpon>FrmInsertarClienteAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmInsertarClienteAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmQuejaCliente.Designer.vb">
+      <DependentUpon>FrmQuejaCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmQuejaCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmQuejasAsesor.Designer.vb">
+      <DependentUpon>FrmQuejasAsesor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmQuejasAsesor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmRecuperarContraseña.Designer.vb">
+      <DependentUpon>FrmRecuperarContraseña.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmRecuperarContraseña.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmSeguimientoAsesor.Designer.vb">
+      <DependentUpon>FrmSeguimientoAsesor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmSeguimientoAsesor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmSeguimientoVisualizar.Designer.vb">
+      <DependentUpon>FrmSeguimientoVisualizar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmSeguimientoVisualizar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa Presentacion\IniciarSesion.Designer.vb">
+      <DependentUpon>IniciarSesion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capa Presentacion\IniciarSesion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa Presentacion\Main2SesionIniciada.Designer.vb">
+      <DependentUpon>Main2SesionIniciada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capa Presentacion\Main2SesionIniciada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa Presentacion\ModificarDatosCliente.Designer.vb">
+      <DependentUpon>ModificarDatosCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capa Presentacion\ModificarDatosCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa Presentacion\OrdenSalida.Designer.vb">
+      <DependentUpon>OrdenSalida.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capa Presentacion\OrdenSalida.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa Presentacion\PresupuestoCliente.Designer.vb">
+      <DependentUpon>PresupuestoCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capa Presentacion\PresupuestoCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa Presentacion\ProgramarOT.Designer.vb">
+      <DependentUpon>ProgramarOT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capa Presentacion\ProgramarOT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa Presentacion\RegistrarCliente.Designer.vb">
+      <DependentUpon>RegistrarCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capa Presentacion\RegistrarCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa Presentacion\SolicitarConsultoria.Designer.vb">
+      <DependentUpon>SolicitarConsultoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capa Presentacion\SolicitarConsultoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa Presentacion\main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa Presentacion\main.Designer.vb">
+      <DependentUpon>main.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Capa Presentacion\ConsultarOT.resx">
+      <DependentUpon>ConsultarOT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa Presentacion\EliminarCliente.resx">
+      <DependentUpon>EliminarCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa Presentacion\FrmAcercaDe.resx">
+      <DependentUpon>FrmAcercaDe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa Presentacion\FrmActualizarAsesores.resx">
+      <DependentUpon>FrmActualizarAsesores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa Presentacion\FrmActualizarClienteAdm.resx">
+      <DependentUpon>FrmActualizarClienteAdm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa Presentacion\FrmAsignarAsesor.resx">
+      <DependentUpon>FrmAsignarAsesor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa Presentacion\FrmAsignarPresupuesto.resx">
+      <DependentUpon>FrmAsignarPresupuesto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa Presentacion\FrmEliminarAsesor.resx">
+      <DependentUpon>FrmEliminarAsesor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa Presentacion\FrmEliminarClientesAdm.resx">
+      <DependentUpon>FrmEliminarClientesAdm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa Presentacion\FrmIniciarsesionEmpleado.resx">
+      <DependentUpon>FrmIniciarsesionEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa Presentacion\FrmInicioEmpleado.resx">
+      <DependentUpon>FrmInicioEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa Presentacion\FrmInsertarAsesores.resx">
+      <DependentUpon>FrmInsertarAsesores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa Presentacion\FrmInsertarClienteAdmin.resx">
+      <DependentUpon>FrmInsertarClienteAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa Presentacion\FrmQuejaCliente.resx">
+      <DependentUpon>FrmQuejaCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa Presentacion\FrmQuejasAsesor.resx">
+      <DependentUpon>FrmQuejasAsesor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa Presentacion\FrmRecuperarContraseña.resx">
+      <DependentUpon>FrmRecuperarContraseña.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa Presentacion\FrmSeguimientoAsesor.resx">
+      <DependentUpon>FrmSeguimientoAsesor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa Presentacion\FrmSeguimientoVisualizar.resx">
+      <DependentUpon>FrmSeguimientoVisualizar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa Presentacion\IniciarSesion.resx">
+      <DependentUpon>IniciarSesion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa Presentacion\Main2SesionIniciada.resx">
+      <DependentUpon>Main2SesionIniciada.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa Presentacion\ModificarDatosCliente.resx">
+      <DependentUpon>ModificarDatosCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa Presentacion\OrdenSalida.resx">
+      <DependentUpon>OrdenSalida.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa Presentacion\PresupuestoCliente.resx">
+      <DependentUpon>PresupuestoCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa Presentacion\ProgramarOT.resx">
+      <DependentUpon>ProgramarOT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa Presentacion\RegistrarCliente.resx">
+      <DependentUpon>RegistrarCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa Presentacion\SolicitarConsultoria.resx">
+      <DependentUpon>SolicitarConsultoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa Presentacion\main.resx">
+      <DependentUpon>main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Img\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
