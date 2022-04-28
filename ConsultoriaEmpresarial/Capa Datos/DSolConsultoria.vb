@@ -7,6 +7,7 @@ Public Class DSolConsultoria
     Private necesidad As String
     Private capacitacion1 As String
     Private presupuesto As Integer
+    Private estado As String
     Private cmd As MySqlCommand
 
     Public Sub New(idSolCon As Integer, idCl As Integer, nec As String, cap1 As String)
@@ -68,8 +69,8 @@ Public Class DSolConsultoria
     Public Function InsertarSolConsultoria(id As String, nece As String, capaci As String) As Boolean
         Try
             Conectar()
-            Dim sql As String = "insert into solConsultoria(idCl,necesidad,cap1,pagado) values(" & id & ", '" &
-                nece & "', '" & capaci & "',False)"
+            Dim sql As String = "insert into solConsultoria(idCl,necesidad,cap1,pagado,estado) values(" & id & ", '" &
+                nece & "', '" & capaci & "',False,'En espera')"
             cmd = New MySqlCommand(sql, con)
             If cmd.ExecuteNonQuery() Then
                 MsgBox("La solicitud de consultoria se ha ingresado correctamente")
@@ -88,6 +89,26 @@ Public Class DSolConsultoria
         Try
             Conectar()
             Dim sql As String = "select s.idsc,c.nomC,s.necesidad,s.cap1,s.presupuesto from solConsultoria as s inner join cliente as c on s.idCl=c.idC"
+            cmd = New MySqlCommand(sql, con)
+            If cmd.ExecuteNonQuery Then
+                Dim dt As New DataTable
+                Dim adp As New MySqlDataAdapter(cmd)
+                adp.Fill(dt)
+                Return dt
+            Else
+                Return Nothing
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        Finally
+            desconectar()
+        End Try
+    End Function
+    Public Function ConsultarEstados() As DataTable
+        Try
+            Conectar()
+            Dim sql As String = "select s.idsc,c.nomC,s.necesidad,s.estado from solConsultoria as s inner join cliente as c on s.idCl=c.idC"
             cmd = New MySqlCommand(sql, con)
             If cmd.ExecuteNonQuery Then
                 Dim dt As New DataTable
@@ -141,10 +162,10 @@ Public Class DSolConsultoria
             Return False
         End Try
     End Function
-    Public Function AsignarAsesorACliente(idAsesor As Integer, idCliente As Integer) As Boolean
+    Public Function AsignarAsesorACliente(idAsesor As Integer, idSol As Integer) As Boolean
         Try
             Conectar()
-            Dim sql As String = "update solConsultoria set idE=" & idAsesor & " where idCl=" & idCliente
+            Dim sql As String = "update solConsultoria set idE=" & idAsesor & " where idsc=" & idSol
             cmd = New MySqlCommand(sql, con)
             If cmd.ExecuteNonQuery Then
                 MsgBox("Se asigno el asesor correctamente")
@@ -177,6 +198,23 @@ Public Class DSolConsultoria
             desconectar()
         End Try
     End Function
+    Public Function ActualizarEstadoSol(estado As String, idsc As Integer) As Boolean
+        Try
+            Conectar()
+            Dim sql As String = "update solConsultoria set estado='" & estado & "' where idSC=" & idsc & ""
+            cmd = New MySqlCommand(sql, con)
+            If cmd.ExecuteNonQuery Then
+                MsgBox("Se actualizo el estado de la solicitud correctamente")
+                Return True
+            Else
+                MsgBox("Hubo un problema" & vbNewLine & "No se registro el presupuesto")
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        End Try
+    End Function
     Public Function SelectIdSolConsul(idCl As Integer) As DataSet
         Try
             Conectar()
@@ -207,6 +245,26 @@ Public Class DSolConsultoria
         Try
             Conectar()
             Dim sql As String = "select * from solConsultoria where idSC=" & idSol
+            cmd = New MySqlCommand(sql, con)
+            If cmd.ExecuteNonQuery() Then
+                Dim dt As New DataTable
+                Dim adp As New MySqlDataAdapter(cmd)
+                adp.Fill(dt)
+                Return dt
+            Else
+                Return Nothing
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        Finally
+            desconectar()
+        End Try
+    End Function
+    Public Function ConsultarStatus(idCl As Integer) As DataTable
+        Try
+            Conectar()
+            Dim sql As String = "select s.idsc,s.necesidad,s.cap1,s.estado,s.presupuesto,s.pagado,s.idE from solConsultoria as s inner join cliente as c on s.idCl=c.idC where s.idCl=" & idCl
             cmd = New MySqlCommand(sql, con)
             If cmd.ExecuteNonQuery() Then
                 Dim dt As New DataTable

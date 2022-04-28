@@ -127,10 +127,10 @@ propicien un cambio dentro de la
 organización.</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Label2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAPIAAACoCAYAAADafbM1AAAAIGNIUk0AAHolAACAgwAA+f8AAIDoAABS
-        CAABFVgAADqXAAAXb9daH5AAAAAJcEhZcwAACxEAAAsRAX9kX5EAAMNvSURBVHhe7J0FXBXb97e30hw4
+        CAABFVgAADqXAAAXb9daH5AAAAAJcEhZcwAACxIAAAsSAdLdfvwAAMNvSURBVHhe7J0FXBXb97e30hw4
         dKcYiHQ3Il2CNErZgWJ3Nwa2GNhit2J3N3aTdiGK3d93zSBc0GPd643f+/d+Ps89nD1zZo5z5pm11sye
         PQzAb37zQyy6+i52WT7C19+C965i2Bx9jloXPkC1EBATNf9v/jlENv7mN6LY8xxWO0thv/UhXLNvfPRc
         ffVp4LKzd8OXHMuLWnL4bNTRmw9qnbl3T6ug9JGkqM//5u9DZONvfvMzFJa+EDv37K36zGPnMfzgGbTf

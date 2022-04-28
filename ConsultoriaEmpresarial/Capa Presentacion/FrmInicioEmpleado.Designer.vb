@@ -24,18 +24,25 @@ Partial Class FrmInicioEmpleado
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.RegistrarClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ActualizarClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EliminarClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GestionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RegistrarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ActualizarToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EliminarToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AceptarSolicitudToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AsignarPresupuestoToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AsignarAsesorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConsultoriaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AsignarPresupuestoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SeguimientoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.QuejasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AsesoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AgregarAsesorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ActualizarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EliminarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AsignarAClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GestionarEnGeneralToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AgregarEmpleadoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ActualizarEmpleadoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EliminarEmpleadoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AsesoresToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AgregarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ActualizarToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EliminarToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.OTToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OrdenSalidaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConsultarOTToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -51,96 +58,141 @@ Partial Class FrmInicioEmpleado
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClientesToolStripMenuItem, Me.ConsultoriaToolStripMenuItem, Me.AsesoresToolStripMenuItem, Me.OTToolStripMenuItem, Me.nameUsuarioTSMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 28)
+        Me.MenuStrip1.Size = New System.Drawing.Size(800, 30)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'ClientesToolStripMenuItem
         '
-        Me.ClientesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RegistrarClienteToolStripMenuItem, Me.ActualizarClienteToolStripMenuItem, Me.EliminarClienteToolStripMenuItem})
+        Me.ClientesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GestionToolStripMenuItem, Me.AceptarSolicitudToolStripMenuItem, Me.AsignarPresupuestoToolStripMenuItem1, Me.AsignarAsesorToolStripMenuItem})
         Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
-        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(75, 24)
+        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(75, 26)
         Me.ClientesToolStripMenuItem.Text = "Clientes"
         '
-        'RegistrarClienteToolStripMenuItem
+        'GestionToolStripMenuItem
         '
-        Me.RegistrarClienteToolStripMenuItem.Name = "RegistrarClienteToolStripMenuItem"
-        Me.RegistrarClienteToolStripMenuItem.Size = New System.Drawing.Size(206, 26)
-        Me.RegistrarClienteToolStripMenuItem.Text = "Registrar Cliente"
+        Me.GestionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RegistrarToolStripMenuItem, Me.ActualizarToolStripMenuItem1, Me.EliminarToolStripMenuItem1})
+        Me.GestionToolStripMenuItem.Name = "GestionToolStripMenuItem"
+        Me.GestionToolStripMenuItem.Size = New System.Drawing.Size(226, 26)
+        Me.GestionToolStripMenuItem.Text = "Gestion"
         '
-        'ActualizarClienteToolStripMenuItem
+        'RegistrarToolStripMenuItem
         '
-        Me.ActualizarClienteToolStripMenuItem.Name = "ActualizarClienteToolStripMenuItem"
-        Me.ActualizarClienteToolStripMenuItem.Size = New System.Drawing.Size(206, 26)
-        Me.ActualizarClienteToolStripMenuItem.Text = "Actualizar cliente"
+        Me.RegistrarToolStripMenuItem.Name = "RegistrarToolStripMenuItem"
+        Me.RegistrarToolStripMenuItem.Size = New System.Drawing.Size(158, 26)
+        Me.RegistrarToolStripMenuItem.Text = "Registrar"
         '
-        'EliminarClienteToolStripMenuItem
+        'ActualizarToolStripMenuItem1
         '
-        Me.EliminarClienteToolStripMenuItem.Name = "EliminarClienteToolStripMenuItem"
-        Me.EliminarClienteToolStripMenuItem.Size = New System.Drawing.Size(206, 26)
-        Me.EliminarClienteToolStripMenuItem.Text = "Eliminar cliente"
+        Me.ActualizarToolStripMenuItem1.Name = "ActualizarToolStripMenuItem1"
+        Me.ActualizarToolStripMenuItem1.Size = New System.Drawing.Size(158, 26)
+        Me.ActualizarToolStripMenuItem1.Text = "Actualizar"
+        '
+        'EliminarToolStripMenuItem1
+        '
+        Me.EliminarToolStripMenuItem1.Name = "EliminarToolStripMenuItem1"
+        Me.EliminarToolStripMenuItem1.Size = New System.Drawing.Size(158, 26)
+        Me.EliminarToolStripMenuItem1.Text = "Eliminar"
+        '
+        'AceptarSolicitudToolStripMenuItem
+        '
+        Me.AceptarSolicitudToolStripMenuItem.Name = "AceptarSolicitudToolStripMenuItem"
+        Me.AceptarSolicitudToolStripMenuItem.Size = New System.Drawing.Size(226, 26)
+        Me.AceptarSolicitudToolStripMenuItem.Text = "Aceptar Solicitud"
+        '
+        'AsignarPresupuestoToolStripMenuItem1
+        '
+        Me.AsignarPresupuestoToolStripMenuItem1.Name = "AsignarPresupuestoToolStripMenuItem1"
+        Me.AsignarPresupuestoToolStripMenuItem1.Size = New System.Drawing.Size(226, 26)
+        Me.AsignarPresupuestoToolStripMenuItem1.Text = "Asignar Presupuesto"
+        '
+        'AsignarAsesorToolStripMenuItem
+        '
+        Me.AsignarAsesorToolStripMenuItem.Name = "AsignarAsesorToolStripMenuItem"
+        Me.AsignarAsesorToolStripMenuItem.Size = New System.Drawing.Size(226, 26)
+        Me.AsignarAsesorToolStripMenuItem.Text = "Asignar asesor"
         '
         'ConsultoriaToolStripMenuItem
         '
-        Me.ConsultoriaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AsignarPresupuestoToolStripMenuItem, Me.SeguimientoToolStripMenuItem, Me.QuejasToolStripMenuItem})
+        Me.ConsultoriaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SeguimientoToolStripMenuItem, Me.QuejasToolStripMenuItem})
         Me.ConsultoriaToolStripMenuItem.Name = "ConsultoriaToolStripMenuItem"
-        Me.ConsultoriaToolStripMenuItem.Size = New System.Drawing.Size(98, 24)
+        Me.ConsultoriaToolStripMenuItem.Size = New System.Drawing.Size(98, 26)
         Me.ConsultoriaToolStripMenuItem.Text = "Consultoria"
-        '
-        'AsignarPresupuestoToolStripMenuItem
-        '
-        Me.AsignarPresupuestoToolStripMenuItem.Name = "AsignarPresupuestoToolStripMenuItem"
-        Me.AsignarPresupuestoToolStripMenuItem.Size = New System.Drawing.Size(227, 26)
-        Me.AsignarPresupuestoToolStripMenuItem.Text = "Asignar presupuesto"
         '
         'SeguimientoToolStripMenuItem
         '
         Me.SeguimientoToolStripMenuItem.Name = "SeguimientoToolStripMenuItem"
-        Me.SeguimientoToolStripMenuItem.Size = New System.Drawing.Size(227, 26)
+        Me.SeguimientoToolStripMenuItem.Size = New System.Drawing.Size(176, 26)
         Me.SeguimientoToolStripMenuItem.Text = "Seguimiento"
         '
         'QuejasToolStripMenuItem
         '
         Me.QuejasToolStripMenuItem.Name = "QuejasToolStripMenuItem"
-        Me.QuejasToolStripMenuItem.Size = New System.Drawing.Size(227, 26)
+        Me.QuejasToolStripMenuItem.Size = New System.Drawing.Size(176, 26)
         Me.QuejasToolStripMenuItem.Text = "Quejas"
         '
         'AsesoresToolStripMenuItem
         '
-        Me.AsesoresToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarAsesorToolStripMenuItem, Me.ActualizarToolStripMenuItem, Me.EliminarToolStripMenuItem, Me.AsignarAClienteToolStripMenuItem})
+        Me.AsesoresToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GestionarEnGeneralToolStripMenuItem, Me.AsesoresToolStripMenuItem1})
         Me.AsesoresToolStripMenuItem.Name = "AsesoresToolStripMenuItem"
-        Me.AsesoresToolStripMenuItem.Size = New System.Drawing.Size(81, 24)
-        Me.AsesoresToolStripMenuItem.Text = "Asesores"
+        Me.AsesoresToolStripMenuItem.Size = New System.Drawing.Size(97, 26)
+        Me.AsesoresToolStripMenuItem.Text = "Empleados"
         '
-        'AgregarAsesorToolStripMenuItem
+        'GestionarEnGeneralToolStripMenuItem
         '
-        Me.AgregarAsesorToolStripMenuItem.Name = "AgregarAsesorToolStripMenuItem"
-        Me.AgregarAsesorToolStripMenuItem.Size = New System.Drawing.Size(202, 26)
-        Me.AgregarAsesorToolStripMenuItem.Text = "Agregar asesor"
+        Me.GestionarEnGeneralToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarEmpleadoToolStripMenuItem, Me.ActualizarEmpleadoToolStripMenuItem, Me.EliminarEmpleadoToolStripMenuItem})
+        Me.GestionarEnGeneralToolStripMenuItem.Name = "GestionarEnGeneralToolStripMenuItem"
+        Me.GestionarEnGeneralToolStripMenuItem.Size = New System.Drawing.Size(229, 26)
+        Me.GestionarEnGeneralToolStripMenuItem.Text = "Gestionar en general"
         '
-        'ActualizarToolStripMenuItem
+        'AgregarEmpleadoToolStripMenuItem
         '
-        Me.ActualizarToolStripMenuItem.Name = "ActualizarToolStripMenuItem"
-        Me.ActualizarToolStripMenuItem.Size = New System.Drawing.Size(202, 26)
-        Me.ActualizarToolStripMenuItem.Text = "Actualizar"
+        Me.AgregarEmpleadoToolStripMenuItem.Name = "AgregarEmpleadoToolStripMenuItem"
+        Me.AgregarEmpleadoToolStripMenuItem.Size = New System.Drawing.Size(230, 26)
+        Me.AgregarEmpleadoToolStripMenuItem.Text = "Agregar empleado"
         '
-        'EliminarToolStripMenuItem
+        'ActualizarEmpleadoToolStripMenuItem
         '
-        Me.EliminarToolStripMenuItem.Name = "EliminarToolStripMenuItem"
-        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(202, 26)
-        Me.EliminarToolStripMenuItem.Text = "Eliminar"
+        Me.ActualizarEmpleadoToolStripMenuItem.Name = "ActualizarEmpleadoToolStripMenuItem"
+        Me.ActualizarEmpleadoToolStripMenuItem.Size = New System.Drawing.Size(230, 26)
+        Me.ActualizarEmpleadoToolStripMenuItem.Text = "Actualizar empleado"
         '
-        'AsignarAClienteToolStripMenuItem
+        'EliminarEmpleadoToolStripMenuItem
         '
-        Me.AsignarAClienteToolStripMenuItem.Name = "AsignarAClienteToolStripMenuItem"
-        Me.AsignarAClienteToolStripMenuItem.Size = New System.Drawing.Size(202, 26)
-        Me.AsignarAClienteToolStripMenuItem.Text = "Asignar a cliente"
+        Me.EliminarEmpleadoToolStripMenuItem.Name = "EliminarEmpleadoToolStripMenuItem"
+        Me.EliminarEmpleadoToolStripMenuItem.Size = New System.Drawing.Size(230, 26)
+        Me.EliminarEmpleadoToolStripMenuItem.Text = "Eliminar empleado"
+        '
+        'AsesoresToolStripMenuItem1
+        '
+        Me.AsesoresToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarToolStripMenuItem, Me.ActualizarToolStripMenuItem2, Me.EliminarToolStripMenuItem2})
+        Me.AsesoresToolStripMenuItem1.Name = "AsesoresToolStripMenuItem1"
+        Me.AsesoresToolStripMenuItem1.Size = New System.Drawing.Size(229, 26)
+        Me.AsesoresToolStripMenuItem1.Text = "Asesores"
+        '
+        'AgregarToolStripMenuItem
+        '
+        Me.AgregarToolStripMenuItem.Name = "AgregarToolStripMenuItem"
+        Me.AgregarToolStripMenuItem.Size = New System.Drawing.Size(158, 26)
+        Me.AgregarToolStripMenuItem.Text = "Agregar"
+        '
+        'ActualizarToolStripMenuItem2
+        '
+        Me.ActualizarToolStripMenuItem2.Name = "ActualizarToolStripMenuItem2"
+        Me.ActualizarToolStripMenuItem2.Size = New System.Drawing.Size(158, 26)
+        Me.ActualizarToolStripMenuItem2.Text = "Actualizar"
+        '
+        'EliminarToolStripMenuItem2
+        '
+        Me.EliminarToolStripMenuItem2.Name = "EliminarToolStripMenuItem2"
+        Me.EliminarToolStripMenuItem2.Size = New System.Drawing.Size(158, 26)
+        Me.EliminarToolStripMenuItem2.Text = "Eliminar"
         '
         'OTToolStripMenuItem
         '
         Me.OTToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OrdenSalidaToolStripMenuItem, Me.ConsultarOTToolStripMenuItem, Me.ProgramarOTToolStripMenuItem})
         Me.OTToolStripMenuItem.Name = "OTToolStripMenuItem"
-        Me.OTToolStripMenuItem.Size = New System.Drawing.Size(41, 24)
+        Me.OTToolStripMenuItem.Size = New System.Drawing.Size(41, 26)
         Me.OTToolStripMenuItem.Text = "OT"
         '
         'OrdenSalidaToolStripMenuItem
@@ -165,7 +217,7 @@ Partial Class FrmInicioEmpleado
         '
         Me.nameUsuarioTSMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CerrarSesionToolStripMenuItem})
         Me.nameUsuarioTSMenuItem.Name = "nameUsuarioTSMenuItem"
-        Me.nameUsuarioTSMenuItem.Size = New System.Drawing.Size(73, 24)
+        Me.nameUsuarioTSMenuItem.Size = New System.Drawing.Size(73, 26)
         Me.nameUsuarioTSMenuItem.Text = "Usuario"
         '
         'CerrarSesionToolStripMenuItem
@@ -193,17 +245,9 @@ Partial Class FrmInicioEmpleado
 
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents ClientesToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents RegistrarClienteToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ActualizarClienteToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents EliminarClienteToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AsesoresToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents nameUsuarioTSMenuItem As ToolStripMenuItem
     Friend WithEvents ConsultoriaToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents AsignarPresupuestoToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents AgregarAsesorToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ActualizarToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents EliminarToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents AsignarAClienteToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SeguimientoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents QuejasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CerrarSesionToolStripMenuItem As ToolStripMenuItem
@@ -211,4 +255,19 @@ Partial Class FrmInicioEmpleado
     Friend WithEvents OrdenSalidaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ConsultarOTToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ProgramarOTToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents GestionToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents RegistrarToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ActualizarToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents EliminarToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents AceptarSolicitudToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AsignarPresupuestoToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents AsignarAsesorToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents GestionarEnGeneralToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AgregarEmpleadoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ActualizarEmpleadoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents EliminarEmpleadoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AsesoresToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents AgregarToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ActualizarToolStripMenuItem2 As ToolStripMenuItem
+    Friend WithEvents EliminarToolStripMenuItem2 As ToolStripMenuItem
 End Class

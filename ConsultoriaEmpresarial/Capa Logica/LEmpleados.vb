@@ -12,9 +12,9 @@
             Return False
         End Try
     End Function
-    Public Function ActualizarEmpleado(id As Integer, usuario As String, contra As String, nombre As String, tel As String, fechaI As String) As Boolean
+    Public Function ActualizarEmpleado(tipo As String, id As Integer, usuario As String, contra As String, nombre As String, tel As String, fechaI As String) As Boolean
         Try
-            Dim de As New DEmpleado(id, usuario, contra, nombre, tel, fechaI)
+            Dim de As New DEmpleado(tipo, id, usuario, contra, nombre, tel, fechaI)
             If de.ActualizarEmpleado(de) = True Then
                 Return True
             Else
@@ -42,6 +42,26 @@
         Try
             Dim de As New DEmpleado
             Dim dt As DataTable = de.ConsultarEmpleados(tipo)
+            Return dt
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        End Try
+    End Function
+    Public Function ConsultarAllEmpleados() As DataTable
+        Try
+            Dim de As New DEmpleado
+            Dim dt As DataTable = de.ConsultarAllEmpleados()
+            Return dt
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        End Try
+    End Function
+    Public Function ConsultarNamesById(idAs As String) As DataTable
+        Try
+            Dim de As New DEmpleado
+            Dim dt As DataTable = de.ConsultarNamesById(idAs)
             Return dt
         Catch ex As Exception
             MsgBox(ex.Message)

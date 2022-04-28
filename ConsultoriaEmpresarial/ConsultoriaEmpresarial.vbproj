@@ -107,6 +107,12 @@
     <Compile Include="Capa Presentacion\EliminarCliente.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Capa Presentacion\FrmAceptarSolicitud.Designer.vb">
+      <DependentUpon>FrmAceptarSolicitud.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmAceptarSolicitud.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Capa Presentacion\FrmAcercaDe.Designer.vb">
       <DependentUpon>FrmAcercaDe.vb</DependentUpon>
     </Compile>
@@ -123,6 +129,18 @@
       <DependentUpon>FrmActualizarClienteAdm.vb</DependentUpon>
     </Compile>
     <Compile Include="Capa Presentacion\FrmActualizarClienteAdm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmActualizarEmpleados.Designer.vb">
+      <DependentUpon>FrmActualizarEmpleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmActualizarEmpleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmAgregarEmpleado.Designer.vb">
+      <DependentUpon>FrmAgregarEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmAgregarEmpleado.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Capa Presentacion\FrmAsignarAsesor.Designer.vb">
@@ -143,6 +161,12 @@
     <Compile Include="Capa Presentacion\FrmAyuda.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Capa Presentacion\FrmConsultarStatus.Designer.vb">
+      <DependentUpon>FrmConsultarStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmConsultarStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Capa Presentacion\FrmEliminarAsesor.Designer.vb">
       <DependentUpon>FrmEliminarAsesor.vb</DependentUpon>
     </Compile>
@@ -153,6 +177,12 @@
       <DependentUpon>FrmEliminarClientesAdm.vb</DependentUpon>
     </Compile>
     <Compile Include="Capa Presentacion\FrmEliminarClientesAdm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmEliminarEmpleados.Designer.vb">
+      <DependentUpon>FrmEliminarEmpleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capa Presentacion\FrmEliminarEmpleados.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Capa Presentacion\FrmIniciarsesionEmpleado.Designer.vb">
@@ -288,6 +318,9 @@
     <EmbeddedResource Include="Capa Presentacion\EliminarCliente.resx">
       <DependentUpon>EliminarCliente.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Capa Presentacion\FrmAceptarSolicitud.resx">
+      <DependentUpon>FrmAceptarSolicitud.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Capa Presentacion\FrmAcercaDe.resx">
       <DependentUpon>FrmAcercaDe.vb</DependentUpon>
     </EmbeddedResource>
@@ -296,6 +329,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Capa Presentacion\FrmActualizarClienteAdm.resx">
       <DependentUpon>FrmActualizarClienteAdm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa Presentacion\FrmActualizarEmpleados.resx">
+      <DependentUpon>FrmActualizarEmpleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa Presentacion\FrmAgregarEmpleado.resx">
+      <DependentUpon>FrmAgregarEmpleado.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Capa Presentacion\FrmAsignarAsesor.resx">
       <DependentUpon>FrmAsignarAsesor.vb</DependentUpon>
@@ -306,11 +345,17 @@
     <EmbeddedResource Include="Capa Presentacion\FrmAyuda.resx">
       <DependentUpon>FrmAyuda.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Capa Presentacion\FrmConsultarStatus.resx">
+      <DependentUpon>FrmConsultarStatus.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Capa Presentacion\FrmEliminarAsesor.resx">
       <DependentUpon>FrmEliminarAsesor.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Capa Presentacion\FrmEliminarClientesAdm.resx">
       <DependentUpon>FrmEliminarClientesAdm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa Presentacion\FrmEliminarEmpleados.resx">
+      <DependentUpon>FrmEliminarEmpleados.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Capa Presentacion\FrmIniciarsesionEmpleado.resx">
       <DependentUpon>FrmIniciarsesionEmpleado.vb</DependentUpon>

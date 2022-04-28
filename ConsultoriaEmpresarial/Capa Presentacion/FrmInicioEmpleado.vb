@@ -1,17 +1,17 @@
 ﻿Imports System.ComponentModel
 
 Public Class FrmInicioEmpleado
-    Private Sub RegistrarClienteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RegistrarClienteToolStripMenuItem.Click
+    Private Sub RegistrarClienteToolStripMenuItem_Click(sender As Object, e As EventArgs)
         FrmInsertarClienteAdmin.Show()
         Me.Hide()
     End Sub
 
-    Private Sub ActualizarClienteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ActualizarClienteToolStripMenuItem.Click
+    Private Sub ActualizarClienteToolStripMenuItem_Click(sender As Object, e As EventArgs)
         FrmActualizarClienteAdm.Show()
         Me.Hide()
     End Sub
 
-    Private Sub EliminarClienteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EliminarClienteToolStripMenuItem.Click
+    Private Sub EliminarClienteToolStripMenuItem_Click(sender As Object, e As EventArgs)
         FrmEliminarClientesAdm.Show()
         Me.Hide()
     End Sub
@@ -20,27 +20,27 @@ Public Class FrmInicioEmpleado
         main.Close()
     End Sub
 
-    Private Sub AsignarPresupuestoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AsignarPresupuestoToolStripMenuItem.Click
+    Private Sub AsignarPresupuestoToolStripMenuItem_Click(sender As Object, e As EventArgs)
         FrmAsignarPresupuesto.Show()
         Me.Hide()
     End Sub
 
-    Private Sub AgregarAsesorToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AgregarAsesorToolStripMenuItem.Click
+    Private Sub AgregarAsesorToolStripMenuItem_Click(sender As Object, e As EventArgs)
         FrmInsertarAsesores.Show()
         Me.Hide()
     End Sub
 
-    Private Sub ActualizarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ActualizarToolStripMenuItem.Click
+    Private Sub ActualizarToolStripMenuItem_Click(sender As Object, e As EventArgs)
         FrmActualizarAsesores.Show()
         Me.Hide()
     End Sub
 
-    Private Sub EliminarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EliminarToolStripMenuItem.Click
+    Private Sub EliminarToolStripMenuItem_Click(sender As Object, e As EventArgs)
         FrmEliminarAsesor.Show()
         Me.Hide()
     End Sub
 
-    Private Sub AsignarAClienteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AsignarAClienteToolStripMenuItem.Click
+    Private Sub AsignarAClienteToolStripMenuItem_Click(sender As Object, e As EventArgs)
         FrmAsignarAsesor.Show()
         Me.Hide()
     End Sub
@@ -72,6 +72,61 @@ Public Class FrmInicioEmpleado
 
     Private Sub ProgramarOTToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProgramarOTToolStripMenuItem.Click
         ProgramarOT.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub RegistrarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RegistrarToolStripMenuItem.Click
+        FrmInsertarClienteAdmin.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub ActualizarToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ActualizarToolStripMenuItem1.Click
+        FrmActualizarClienteAdm.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub EliminarToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles EliminarToolStripMenuItem1.Click
+        FrmEliminarClientesAdm.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub AsignarPresupuestoToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles AsignarPresupuestoToolStripMenuItem1.Click
+        FrmAsignarPresupuesto.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub AsignarAsesorToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AsignarAsesorToolStripMenuItem.Click
+        FrmAsignarAsesor.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub AgregarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AgregarToolStripMenuItem.Click
+        FrmInsertarAsesores.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub ActualizarToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ActualizarToolStripMenuItem2.Click
+        FrmActualizarAsesores.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub EliminarToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles EliminarToolStripMenuItem2.Click
+        FrmEliminarAsesor.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub AgregarEmpleadoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AgregarEmpleadoToolStripMenuItem.Click
+        FrmAgregarEmpleado.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub ActualizarEmpleadoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ActualizarEmpleadoToolStripMenuItem.Click
+        FrmActualizarEmpleados.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub EliminarEmpleadoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EliminarEmpleadoToolStripMenuItem.Click
+        FrmEliminarEmpleados.Show()
         Me.Hide()
     End Sub
 End Class

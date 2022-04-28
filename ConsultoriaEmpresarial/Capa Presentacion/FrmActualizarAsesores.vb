@@ -20,7 +20,7 @@ Public Class FrmActualizarAsesores
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
         Try
             Dim le As New LEmpleados
-            le.ActualizarEmpleado(txtId.Text, txtUsuario.Text, txtContra.Text, txtNombre.Text, txtTel.Text, datetFechaI.Text)
+            le.ActualizarEmpleado("asesor", txtId.Text, txtUsuario.Text, txtContra.Text, txtNombre.Text, txtTel.Text, datetFechaI.Text)
             ConsultarAsesores()
             BorrarTodo(Me)
         Catch ex As Exception

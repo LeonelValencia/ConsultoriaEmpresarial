@@ -19,7 +19,8 @@ Public Class DEmpleado
         Me.tel = tel
         fechaInicio = fechInicio
     End Sub
-    Public Sub New(id As Integer, user As String, contra As String, nom As String, tel As String, fechInicio As String)
+    Public Sub New(tipo As String, id As Integer, user As String, contra As String, nom As String, tel As String, fechInicio As String)
+        Me.tipo = tipo
         Me.id = id
         usuario = user
         contraseña = contra
@@ -155,10 +156,28 @@ Public Class DEmpleado
             Return Nothing
         End Try
     End Function
+    Public Function ConsultarAllEmpleados() As DataTable
+        Try
+            Conectar()
+            Dim sql As String = "select * from empleado"
+            cmd = New MySqlCommand(sql, con)
+            If cmd.ExecuteNonQuery = True Then
+                Dim dt As New DataTable
+                Dim adp As New MySqlDataAdapter(cmd)
+                adp.Fill(dt)
+                Return dt
+            Else
+                Return Nothing
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        End Try
+    End Function
     Public Function ActualizarEmpleado(de As DEmpleado) As Boolean
         Try
             Conectar()
-            Dim sql As String = "update empleado set usuario='" & de.UsuarioCliente & "',contraseña='" & de.ContraseCliente & "',nombre='" & de.NomCliente &
+            Dim sql As String = "update empleado set tipo='" & de.tipo & "',usuario='" & de.UsuarioCliente & "',contraseña='" & de.ContraseCliente & "',nombre='" & de.NomCliente &
                 "',tel='" & de.TellCliente & "',fechaInicio='" & de.FechaIniCliente & "' where id=" & de.IdEmpleado & ""
             cmd = New MySqlCommand(sql, con)
             If cmd.ExecuteNonQuery = True Then
@@ -197,6 +216,24 @@ Public Class DEmpleado
             Dim ds As New DataSet
             adt.Fill(ds)
             Return ds
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        End Try
+    End Function
+    Public Function ConsultarNamesById(idAs As String) As DataTable
+        Try
+            Conectar()
+            Dim sql As String = "select nombre from empleado where id=" & idAs & ""
+            cmd = New MySqlCommand(sql, con)
+            If cmd.ExecuteNonQuery = True Then
+                Dim dt As New DataTable
+                Dim adp As New MySqlDataAdapter(cmd)
+                adp.Fill(dt)
+                Return dt
+            Else
+                Return Nothing
+            End If
         Catch ex As Exception
             MsgBox(ex.Message)
             Return Nothing

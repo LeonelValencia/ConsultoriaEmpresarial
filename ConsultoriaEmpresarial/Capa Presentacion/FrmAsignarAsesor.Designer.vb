@@ -31,6 +31,8 @@ Partial Class FrmAsignarAsesor
         Me.cbAsesores = New System.Windows.Forms.ComboBox()
         Me.btnAsignar = New System.Windows.Forms.Button()
         Me.txtNombreCliente = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txtIdSol = New System.Windows.Forms.TextBox()
         CType(Me.dgvAsesorCliente, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -44,14 +46,14 @@ Partial Class FrmAsignarAsesor
         Me.dgvAsesorCliente.ReadOnly = True
         Me.dgvAsesorCliente.RowHeadersWidth = 51
         Me.dgvAsesorCliente.RowTemplate.Height = 24
-        Me.dgvAsesorCliente.Size = New System.Drawing.Size(737, 150)
+        Me.dgvAsesorCliente.Size = New System.Drawing.Size(591, 150)
         Me.dgvAsesorCliente.TabIndex = 32
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(232, 24)
+        Me.Label2.Location = New System.Drawing.Point(143, 21)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(357, 36)
         Me.Label2.TabIndex = 33
@@ -69,7 +71,7 @@ Partial Class FrmAsignarAsesor
         '
         'txtIdCliente
         '
-        Me.txtIdCliente.Location = New System.Drawing.Point(143, 79)
+        Me.txtIdCliente.Location = New System.Drawing.Point(149, 79)
         Me.txtIdCliente.Name = "txtIdCliente"
         Me.txtIdCliente.Size = New System.Drawing.Size(84, 22)
         Me.txtIdCliente.TabIndex = 37
@@ -86,7 +88,7 @@ Partial Class FrmAsignarAsesor
         '
         'txtIdAsesor
         '
-        Me.txtIdAsesor.Location = New System.Drawing.Point(143, 125)
+        Me.txtIdAsesor.Location = New System.Drawing.Point(149, 125)
         Me.txtIdAsesor.Name = "txtIdAsesor"
         Me.txtIdAsesor.Size = New System.Drawing.Size(84, 22)
         Me.txtIdAsesor.TabIndex = 39
@@ -102,7 +104,7 @@ Partial Class FrmAsignarAsesor
         'btnAsignar
         '
         Me.btnAsignar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAsignar.Location = New System.Drawing.Point(304, 195)
+        Me.btnAsignar.Location = New System.Drawing.Point(251, 207)
         Me.btnAsignar.Name = "btnAsignar"
         Me.btnAsignar.Size = New System.Drawing.Size(129, 42)
         Me.btnAsignar.TabIndex = 42
@@ -116,11 +118,30 @@ Partial Class FrmAsignarAsesor
         Me.txtNombreCliente.Size = New System.Drawing.Size(225, 22)
         Me.txtNombreCliente.TabIndex = 43
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(55, 170)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(140, 20)
+        Me.Label3.TabIndex = 45
+        Me.Label3.Text = "Folio Consultoria:"
+        '
+        'txtIdSol
+        '
+        Me.txtIdSol.Location = New System.Drawing.Point(207, 170)
+        Me.txtIdSol.Name = "txtIdSol"
+        Me.txtIdSol.Size = New System.Drawing.Size(84, 22)
+        Me.txtIdSol.TabIndex = 44
+        '
         'FrmAsignarAsesor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(671, 450)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.txtIdSol)
         Me.Controls.Add(Me.txtNombreCliente)
         Me.Controls.Add(Me.btnAsignar)
         Me.Controls.Add(Me.cbAsesores)
@@ -148,4 +169,6 @@ Partial Class FrmAsignarAsesor
     Friend WithEvents cbAsesores As ComboBox
     Friend WithEvents btnAsignar As Button
     Friend WithEvents txtNombreCliente As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents txtIdSol As TextBox
 End Class

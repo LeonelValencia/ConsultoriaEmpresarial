@@ -53,4 +53,19 @@ Public Class Main2SesionIniciada
         FrmQuejaCliente.Show()
         Me.Hide()
     End Sub
+
+    Private Sub SobreNosotrosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SobreNosotrosToolStripMenuItem.Click
+        FrmAcercaDe.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub AyudaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AyudaToolStripMenuItem.Click
+        FrmAyuda.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub StatusToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles StatusToolStripMenuItem.Click
+        FrmConsultarStatus.Show()
+        Me.Hide()
+    End Sub
 End Class

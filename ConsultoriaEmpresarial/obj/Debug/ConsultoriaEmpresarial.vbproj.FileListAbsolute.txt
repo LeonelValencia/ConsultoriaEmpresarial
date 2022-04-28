@@ -56,3 +56,8 @@ C:\Users\valen\source\repos\ConsultoriaEmpresarial\ConsultoriaEmpresarial\obj\De
 C:\Users\valen\source\repos\ConsultoriaEmpresarial\ConsultoriaEmpresarial\obj\Debug\ConsultoriaEmpresarial.FrmSeguimientoAsesor.resources
 C:\Users\valen\source\repos\ConsultoriaEmpresarial\ConsultoriaEmpresarial\obj\Debug\ConsultoriaEmpresarial.FrmSeguimientoVisualizar.resources
 C:\Users\valen\source\repos\ConsultoriaEmpresarial\ConsultoriaEmpresarial\obj\Debug\ConsultoriaEmpresarial.FrmAyuda.resources
+C:\Users\valen\source\repos\ConsultoriaEmpresarial\ConsultoriaEmpresarial\obj\Debug\ConsultoriaEmpresarial.FrmAceptarSolicitud.resources
+C:\Users\valen\source\repos\ConsultoriaEmpresarial\ConsultoriaEmpresarial\obj\Debug\ConsultoriaEmpresarial.FrmAgregarEmpleado.resources
+C:\Users\valen\source\repos\ConsultoriaEmpresarial\ConsultoriaEmpresarial\obj\Debug\ConsultoriaEmpresarial.FrmActualizarEmpleados.resources
+C:\Users\valen\source\repos\ConsultoriaEmpresarial\ConsultoriaEmpresarial\obj\Debug\ConsultoriaEmpresarial.FrmEliminarEmpleados.resources
+C:\Users\valen\source\repos\ConsultoriaEmpresarial\ConsultoriaEmpresarial\obj\Debug\ConsultoriaEmpresarial.FrmConsultarStatus.resources

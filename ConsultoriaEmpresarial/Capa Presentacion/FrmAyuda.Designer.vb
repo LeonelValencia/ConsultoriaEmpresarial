@@ -40,9 +40,11 @@ Partial Class FrmAyuda
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 356)
+        Me.ClientSize = New System.Drawing.Size(932, 356)
         Me.Controls.Add(Me.Label1)
+        Me.MinimumSize = New System.Drawing.Size(920, 403)
         Me.Name = "FrmAyuda"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmAyuda"
         Me.ResumeLayout(False)
         Me.PerformLayout()

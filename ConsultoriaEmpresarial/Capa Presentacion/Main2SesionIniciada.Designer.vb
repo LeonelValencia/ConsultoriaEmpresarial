@@ -38,6 +38,7 @@ Partial Class Main2SesionIniciada
         Me.CerrarSesionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdClienteMain = New System.Windows.Forms.TextBox()
+        Me.StatusToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -55,7 +56,7 @@ Partial Class Main2SesionIniciada
         '
         'UsuarioToolStripMenuItem
         '
-        Me.UsuarioToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SolicitarConsultoriaToolStripMenuItem, Me.PresupuestoToolStripMenuItem, Me.ModificarDatosToolStripMenuItem, Me.EliminarMiCuentaToolStripMenuItem, Me.QuejasToolStripMenuItem, Me.SeguimientoToolStripMenuItem})
+        Me.UsuarioToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SolicitarConsultoriaToolStripMenuItem, Me.PresupuestoToolStripMenuItem, Me.ModificarDatosToolStripMenuItem, Me.EliminarMiCuentaToolStripMenuItem, Me.QuejasToolStripMenuItem, Me.SeguimientoToolStripMenuItem, Me.StatusToolStripMenuItem})
         Me.UsuarioToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText
         Me.UsuarioToolStripMenuItem.Name = "UsuarioToolStripMenuItem"
         Me.UsuarioToolStripMenuItem.Size = New System.Drawing.Size(93, 32)
@@ -146,6 +147,12 @@ Partial Class Main2SesionIniciada
         Me.txtIdClienteMain.Size = New System.Drawing.Size(100, 22)
         Me.txtIdClienteMain.TabIndex = 2
         '
+        'StatusToolStripMenuItem
+        '
+        Me.StatusToolStripMenuItem.Name = "StatusToolStripMenuItem"
+        Me.StatusToolStripMenuItem.Size = New System.Drawing.Size(271, 32)
+        Me.StatusToolStripMenuItem.Text = "Status"
+        '
         'Main2SesionIniciada
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -180,4 +187,5 @@ Partial Class Main2SesionIniciada
     Friend WithEvents txtIdClienteMain As TextBox
     Friend WithEvents QuejasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SeguimientoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents StatusToolStripMenuItem As ToolStripMenuItem
 End Class

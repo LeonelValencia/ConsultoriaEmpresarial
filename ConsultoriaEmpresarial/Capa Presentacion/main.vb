@@ -69,4 +69,9 @@ Public Class main
         RegistrarCliente.Show()
         Me.Hide()
     End Sub
+
+    Private Sub AyudaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AyudaToolStripMenuItem.Click
+        FrmAyuda.Show()
+        Me.Hide()
+    End Sub
 End Class

@@ -28,6 +28,16 @@ Public Class LSolConsul
             Return Nothing
         End Try
     End Function
+    Public Function ConsultarEstados() As DataTable
+        Try
+            Dim ds As New DSolConsultoria
+            Dim dt As DataTable = ds.ConsultarEstados
+            Return dt
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        End Try
+    End Function
     Public Function ConsultarAsignarAsesor() As DataTable
         Try
             Dim dsc As New DSolConsultoria
@@ -38,10 +48,10 @@ Public Class LSolConsul
             Return Nothing
         End Try
     End Function
-    Public Function AsignarAsesorACliente(idAs As Integer, idCl As Integer) As Boolean
+    Public Function AsignarAsesorACliente(idAs As Integer, idSol As Integer) As Boolean
         Try
             Dim dsc As New DSolConsultoria
-            If dsc.AsignarAsesorACliente(idAs, idCl) = True Then
+            If dsc.AsignarAsesorACliente(idAs, idSol) = True Then
                 Return True
             Else
                 Return False
@@ -77,6 +87,19 @@ Public Class LSolConsul
             Return False
         End Try
     End Function
+    Public Function ActualizarEstado(estado As String, idsc As Integer) As Boolean
+        Try
+            Dim ds As New DSolConsultoria
+            If ds.ActualizarEstadoSol(estado, idsc) Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        End Try
+    End Function
     Public Function ListarAsesores() As DataSet
         Try
             Dim dc As New DSolConsultoria
@@ -101,6 +124,16 @@ Public Class LSolConsul
         Try
             Dim ds As New DSolConsultoria
             Dim dt As DataTable = ds.SelectAllIdSol(idSol)
+            Return dt
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        End Try
+    End Function
+    Public Function ConsultarStatus(idCl As Integer) As DataTable
+        Try
+            Dim ds As New DSolConsultoria
+            Dim dt As DataTable = ds.ConsultarStatus(idCl)
             Return dt
         Catch ex As Exception
             MsgBox(ex.Message)

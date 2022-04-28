@@ -4,7 +4,7 @@ Public Class FrmAsignarAsesor
     Private Sub btnAsignar_Click(sender As Object, e As EventArgs) Handles btnAsignar.Click
         Try
             Dim ls As New LSolConsul
-            ls.AsignarAsesorACliente(txtIdAsesor.Text, txtIdCliente.Text)
+            ls.AsignarAsesorACliente(txtIdAsesor.Text, txtIdSol.Text)
             txtIdCliente.Clear()
             txtNombreCliente.Clear()
             MostrarTabla()
@@ -40,10 +40,11 @@ Public Class FrmAsignarAsesor
         FrmInicioEmpleado.Show()
     End Sub
     Private Sub dgvAsesorCliente_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvAsesorCliente.CellClick
-        txtNombreCliente.Text = dgvAsesorCliente.CurrentRow.Cells(1).Value.ToString
-        Dim nombre As String = dgvAsesorCliente.CurrentRow.Cells(1).Value.ToString
-        Dim ls As New LSolConsul
         Try
+            txtNombreCliente.Text = dgvAsesorCliente.CurrentRow.Cells(1).Value.ToString
+            txtIdSol.Text = dgvAsesorCliente.CurrentRow.Cells(0).Value.ToString
+            Dim nombre As String = dgvAsesorCliente.CurrentRow.Cells(1).Value.ToString
+            Dim ls As New LSolConsul
             Dim dt As DataTable = ls.SetIdClienteName(nombre)
             Dim dr As DataRow = dt.Rows.Item(0)
             txtIdCliente.Text = dr.Item("idCl")

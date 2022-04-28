@@ -36,10 +36,10 @@ Partial Class main
         Me.NToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EmpleadoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.IniciarSesionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RegistrateToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.RegistrateToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -132,6 +132,12 @@ Partial Class main
         Me.IniciarSesionToolStripMenuItem.Size = New System.Drawing.Size(157, 32)
         Me.IniciarSesionToolStripMenuItem.Text = "Iniciar sesion"
         '
+        'RegistrateToolStripMenuItem
+        '
+        Me.RegistrateToolStripMenuItem.Name = "RegistrateToolStripMenuItem"
+        Me.RegistrateToolStripMenuItem.Size = New System.Drawing.Size(113, 32)
+        Me.RegistrateToolStripMenuItem.Text = "Registrate"
+        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -162,12 +168,6 @@ Partial Class main
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 5
         Me.PictureBox1.TabStop = False
-        '
-        'RegistrateToolStripMenuItem
-        '
-        Me.RegistrateToolStripMenuItem.Name = "RegistrateToolStripMenuItem"
-        Me.RegistrateToolStripMenuItem.Size = New System.Drawing.Size(113, 32)
-        Me.RegistrateToolStripMenuItem.Text = "Registrate"
         '
         'main
         '
