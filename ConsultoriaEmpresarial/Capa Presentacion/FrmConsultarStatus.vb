@@ -8,8 +8,6 @@ Public Class FrmConsultarStatus
             Dim ls As New LSolConsul
             Dim dt As DataTable = ls.ConsultarStatus(idCl)
             dgvSolCliente.DataSource = dt
-            txtEstado.Text = dgvSolCliente.Rows(0).Cells(3).Value.ToString
-            TxtPagado.Text = dgvSolCliente.Rows(0).Cells(5).Value.ToString
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try

@@ -14,7 +14,7 @@ Public Class EliminarCliente
         Finally
             txtContraseña.Text = ""
             main.Show()
-            Me.Hide()
+            Me.Close()
         End Try
     End Sub
 End Class

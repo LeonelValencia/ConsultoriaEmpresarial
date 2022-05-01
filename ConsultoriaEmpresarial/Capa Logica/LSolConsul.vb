@@ -177,7 +177,6 @@ Public Class LSolConsul
             Dim dsc As New DSolConsultoria
             dsc.IdClienteSolConsul = idc
             dsc.SetIdCliente(idc)
-            MsgBox("Tu ID es= " & idc)
             Return True
         Catch ex As Exception
             MsgBox(ex.Message)

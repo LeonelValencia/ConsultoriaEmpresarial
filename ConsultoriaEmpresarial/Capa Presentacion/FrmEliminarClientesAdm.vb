@@ -31,6 +31,5 @@ Public Class FrmEliminarClientesAdm
 
     Private Sub FrmEliminarClientesAdm_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         FrmInicioEmpleado.Show()
-        Me.Hide()
     End Sub
 End Class

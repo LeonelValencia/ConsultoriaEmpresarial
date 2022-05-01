@@ -126,7 +126,7 @@ select seguimiento from seguimiento where idCl=6;
 select nomC from cliente;
 select nombre from empleado;
 select s.idsc,c.nomC,s.necesidad,s.cap1,s.estado,s.presupuesto,s.pagado,s.idE,e.nombre from solConsultoria as s inner join cliente as c inner join empleado as e on s.idCl=c.idC and s.idE=e.id where s.idCl=6;
-select s.idsc,s.necesidad,s.cap1,s.estado,s.presupuesto,s.pagado,s.idE from solConsultoria as s inner join cliente as c on s.idCl=c.idC where s.idCl=6;
+select s.idsc,s.idCl, c.userC, s.necesidad,s.cap1,s.estado,s.presupuesto,s.pagado,s.idE from solConsultoria as s inner join cliente as c on s.idCl=c.idC where s.idCl=6;
 select nombre from empleado where id=2;
 /* aws rds create-db-parameter-group ^
     --db-parameter-group-name allow-triggers ^

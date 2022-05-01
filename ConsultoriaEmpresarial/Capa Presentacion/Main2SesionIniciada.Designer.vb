@@ -31,15 +31,28 @@ Partial Class Main2SesionIniciada
         Me.EliminarMiCuentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.QuejasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SeguimientoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.StatusToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SobreNosotrosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NotificacionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NombreDeUsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CerrarSesionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdClienteMain = New System.Windows.Forms.TextBox()
-        Me.StatusToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.dgvSolCliente = New System.Windows.Forms.DataGridView()
+        Me.LblEstado = New System.Windows.Forms.Label()
+        Me.LblPresupuesto = New System.Windows.Forms.Label()
+        Me.LblNameAsesor = New System.Windows.Forms.Label()
+        Me.LblIdAsesor = New System.Windows.Forms.Label()
+        Me.LblPagado = New System.Windows.Forms.Label()
+        Me.BtnActualizar = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
+        CType(Me.dgvSolCliente, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -98,6 +111,12 @@ Partial Class Main2SesionIniciada
         Me.SeguimientoToolStripMenuItem.Size = New System.Drawing.Size(271, 32)
         Me.SeguimientoToolStripMenuItem.Text = "Seguimiento"
         '
+        'StatusToolStripMenuItem
+        '
+        Me.StatusToolStripMenuItem.Name = "StatusToolStripMenuItem"
+        Me.StatusToolStripMenuItem.Size = New System.Drawing.Size(271, 32)
+        Me.StatusToolStripMenuItem.Text = "Status"
+        '
         'SobreNosotrosToolStripMenuItem
         '
         Me.SobreNosotrosToolStripMenuItem.Name = "SobreNosotrosToolStripMenuItem"
@@ -127,39 +146,162 @@ Partial Class Main2SesionIniciada
         'CerrarSesionToolStripMenuItem
         '
         Me.CerrarSesionToolStripMenuItem.Name = "CerrarSesionToolStripMenuItem"
-        Me.CerrarSesionToolStripMenuItem.Size = New System.Drawing.Size(207, 32)
+        Me.CerrarSesionToolStripMenuItem.Size = New System.Drawing.Size(224, 32)
         Me.CerrarSesionToolStripMenuItem.Text = "cerrar sesion"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(682, 75)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(71, 16)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "ID Cliente="
         '
         'txtIdClienteMain
         '
         Me.txtIdClienteMain.Enabled = False
-        Me.txtIdClienteMain.Location = New System.Drawing.Point(759, 72)
+        Me.txtIdClienteMain.Location = New System.Drawing.Point(140, 172)
         Me.txtIdClienteMain.Name = "txtIdClienteMain"
         Me.txtIdClienteMain.Size = New System.Drawing.Size(100, 22)
         Me.txtIdClienteMain.TabIndex = 2
         '
-        'StatusToolStripMenuItem
+        'Label6
         '
-        Me.StatusToolStripMenuItem.Name = "StatusToolStripMenuItem"
-        Me.StatusToolStripMenuItem.Size = New System.Drawing.Size(271, 32)
-        Me.StatusToolStripMenuItem.Text = "Status"
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(290, 331)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(130, 16)
+        Me.Label6.TabIndex = 55
+        Me.Label6.Text = "Nombre del asesor="
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(15, 334)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(71, 16)
+        Me.Label5.TabIndex = 53
+        Me.Label5.Text = "Id Asesor="
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(15, 295)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(63, 16)
+        Me.Label4.TabIndex = 51
+        Me.Label4.Text = "Pagado="
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(15, 257)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(90, 16)
+        Me.Label3.TabIndex = 49
+        Me.Label3.Text = "Presupuesto="
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(15, 219)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(111, 16)
+        Me.Label2.TabIndex = 47
+        Me.Label2.Text = "Estado Solicitud="
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(15, 178)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(71, 16)
+        Me.Label7.TabIndex = 45
+        Me.Label7.Text = "ID Cliente="
+        '
+        'dgvSolCliente
+        '
+        Me.dgvSolCliente.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+        Me.dgvSolCliente.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.dgvSolCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvSolCliente.Location = New System.Drawing.Point(8, 63)
+        Me.dgvSolCliente.Name = "dgvSolCliente"
+        Me.dgvSolCliente.ReadOnly = True
+        Me.dgvSolCliente.RowHeadersWidth = 51
+        Me.dgvSolCliente.RowTemplate.Height = 24
+        Me.dgvSolCliente.Size = New System.Drawing.Size(862, 95)
+        Me.dgvSolCliente.TabIndex = 44
+        '
+        'LblEstado
+        '
+        Me.LblEstado.AutoSize = True
+        Me.LblEstado.ForeColor = System.Drawing.SystemColors.HotTrack
+        Me.LblEstado.Location = New System.Drawing.Point(137, 219)
+        Me.LblEstado.Name = "LblEstado"
+        Me.LblEstado.Size = New System.Drawing.Size(179, 16)
+        Me.LblEstado.TabIndex = 57
+        Me.LblEstado.Text = "No has solicitado consultoria"
+        '
+        'LblPresupuesto
+        '
+        Me.LblPresupuesto.AutoSize = True
+        Me.LblPresupuesto.ForeColor = System.Drawing.SystemColors.HotTrack
+        Me.LblPresupuesto.Location = New System.Drawing.Point(137, 257)
+        Me.LblPresupuesto.Name = "LblPresupuesto"
+        Me.LblPresupuesto.Size = New System.Drawing.Size(202, 16)
+        Me.LblPresupuesto.TabIndex = 58
+        Me.LblPresupuesto.Text = "No te han asignado presupuesto"
+        '
+        'LblNameAsesor
+        '
+        Me.LblNameAsesor.AutoSize = True
+        Me.LblNameAsesor.ForeColor = System.Drawing.SystemColors.HotTrack
+        Me.LblNameAsesor.Location = New System.Drawing.Point(444, 331)
+        Me.LblNameAsesor.Name = "LblNameAsesor"
+        Me.LblNameAsesor.Size = New System.Drawing.Size(186, 16)
+        Me.LblNameAsesor.TabIndex = 60
+        Me.LblNameAsesor.Text = "No te han asignado un asesor"
+        '
+        'LblIdAsesor
+        '
+        Me.LblIdAsesor.AutoSize = True
+        Me.LblIdAsesor.ForeColor = System.Drawing.SystemColors.HotTrack
+        Me.LblIdAsesor.Location = New System.Drawing.Point(137, 334)
+        Me.LblIdAsesor.Name = "LblIdAsesor"
+        Me.LblIdAsesor.Size = New System.Drawing.Size(14, 16)
+        Me.LblIdAsesor.TabIndex = 62
+        Me.LblIdAsesor.Text = "0"
+        '
+        'LblPagado
+        '
+        Me.LblPagado.AutoSize = True
+        Me.LblPagado.ForeColor = System.Drawing.SystemColors.HotTrack
+        Me.LblPagado.Location = New System.Drawing.Point(137, 295)
+        Me.LblPagado.Name = "LblPagado"
+        Me.LblPagado.Size = New System.Drawing.Size(25, 16)
+        Me.LblPagado.TabIndex = 63
+        Me.LblPagado.Text = "No"
+        '
+        'BtnActualizar
+        '
+        Me.BtnActualizar.Location = New System.Drawing.Point(382, 376)
+        Me.BtnActualizar.Name = "BtnActualizar"
+        Me.BtnActualizar.Size = New System.Drawing.Size(95, 31)
+        Me.BtnActualizar.TabIndex = 64
+        Me.BtnActualizar.Text = "Actualizar"
+        Me.BtnActualizar.UseVisualStyleBackColor = True
         '
         'Main2SesionIniciada
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(882, 450)
+        Me.Controls.Add(Me.BtnActualizar)
+        Me.Controls.Add(Me.LblPagado)
+        Me.Controls.Add(Me.LblIdAsesor)
+        Me.Controls.Add(Me.LblNameAsesor)
+        Me.Controls.Add(Me.LblPresupuesto)
+        Me.Controls.Add(Me.LblEstado)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.dgvSolCliente)
         Me.Controls.Add(Me.txtIdClienteMain)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Main2SesionIniciada"
@@ -167,6 +309,7 @@ Partial Class Main2SesionIniciada
         Me.Text = "Main2SesionIniciada"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        CType(Me.dgvSolCliente, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -183,9 +326,21 @@ Partial Class Main2SesionIniciada
     Friend WithEvents SobreNosotrosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AyudaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents NotificacionesToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents Label1 As Label
     Friend WithEvents txtIdClienteMain As TextBox
     Friend WithEvents QuejasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SeguimientoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents StatusToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents dgvSolCliente As DataGridView
+    Friend WithEvents LblEstado As Label
+    Friend WithEvents LblPresupuesto As Label
+    Friend WithEvents LblNameAsesor As Label
+    Friend WithEvents LblIdAsesor As Label
+    Friend WithEvents LblPagado As Label
+    Friend WithEvents BtnActualizar As Button
 End Class

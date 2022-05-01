@@ -20,15 +20,20 @@ Public Class Iniciar_sesion
         Try
             Dim lc As New LClientes()
             Dim lsc As New LSolConsul()
-            lc.iniciarCliente(txtUsuario.Text, txtContraseña.Text)
-            Dim dt As DataTable = lc.GetIdCliente(txtUsuario.Text)
-            Dim dr As DataRow = dt.Rows.Item(0)
-            lc.SetIdCliente(dr.Item("idC"))
-            lsc.SetIdCliente(dr.Item("idC"))
-            lsc.IDClienteLSolConsul = Val(dr.Item("idC"))
-            Main2SesionIniciada.txtIdClienteMain.Text = dr.Item("idC")
-            FrmQuejaCliente.txtIdCliente.Text = dr.Item("idC")
-            PresupuestoCliente.txtIdCliente.Text = dr.Item("idC")
+            If lc.iniciarCliente(txtUsuario.Text, txtContraseña.Text) Then
+                Main2SesionIniciada.NombreDeUsuarioToolStripMenuItem.Text = txtUsuario.Text
+                Dim dt As DataTable = lc.GetIdCliente(txtUsuario.Text)
+                Dim dr As DataRow = dt.Rows.Item(0)
+                Main2SesionIniciada.txtIdClienteMain.Text = dr.Item("idC")
+                lc.SetIdCliente(dr.Item("idC"))
+                lsc.SetIdCliente(dr.Item("idC"))
+                lsc.IDClienteLSolConsul = Val(dr.Item("idC"))
+                Dim idc As String = Val(dr.Item("idC"))
+                FrmQuejaCliente.txtIdCliente.Text = dr.Item("idC")
+                PresupuestoCliente.txtIdCliente.Text = dr.Item("idC")
+                txtContraseña.Clear()
+                txtUsuario.Clear()
+            End If
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
