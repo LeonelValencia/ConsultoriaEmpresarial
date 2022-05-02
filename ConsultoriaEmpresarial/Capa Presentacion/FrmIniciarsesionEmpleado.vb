@@ -4,8 +4,8 @@ Public Class FrmIniciarsesionEmpleado
     Private Sub btnEntrar_Click(sender As Object, e As EventArgs) Handles btnEntrar.Click
         Try
             Dim le As New LEmpleados()
-            le.iniciarEmpleado(txtUsuario.Text, txtContraseña.Text)
             FrmInicioEmpleado.nameUsuarioTSMenuItem.Text = txtUsuario.Text
+            le.iniciarEmpleado(txtUsuario.Text, txtContraseña.Text)
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try

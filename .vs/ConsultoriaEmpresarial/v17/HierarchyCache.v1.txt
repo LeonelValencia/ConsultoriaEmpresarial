@@ -48,16 +48,14 @@ i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoria
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\eliminarcliente.vb
 ++FrmAceptarSolicitud.vb
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmaceptarsolicitud.vb
-++FrmAceptarSolicitud.Designer.vb
-i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmaceptarsolicitud.designer.vb
-++FrmAceptarSolicitud.resx
-i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmaceptarsolicitud.resx
 ++FrmAcercaDe.vb
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmacercade.vb
 ++FrmActualizarAsesores.vb
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmactualizarasesores.vb
 ++FrmActualizarClienteAdm.vb
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmactualizarclienteadm.vb
+++FrmActualizarEmpleados.vb
+i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmactualizarempleados.vb
 ++FrmAgregarEmpleado.vb
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmagregarempleado.vb
 ++FrmAsignarAsesor.vb
@@ -66,10 +64,14 @@ i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoria
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmasignarpresupuesto.vb
 ++FrmAyuda.vb
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmayuda.vb
+++FrmConsultarStatus.vb
+i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmconsultarstatus.vb
 ++FrmEliminarAsesor.vb
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmeliminarasesor.vb
 ++FrmEliminarClientesAdm.vb
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmeliminarclientesadm.vb
+++FrmEliminarEmpleados.vb
+i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmeliminarempleados.vb
 ++FrmIniciarsesionEmpleado.vb
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frminiciarsesionempleado.vb
 ++FrmInicioEmpleado.vb
@@ -90,6 +92,10 @@ i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoria
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmseguimientovisualizar.vb
 ++IniciarSesion.vb
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\iniciarsesion.vb
+++IniciarSesion.Designer.vb
+i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\iniciarsesion.designer.vb
+++IniciarSesion.resx
+i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\iniciarsesion.resx
 ++main.vb
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\main.vb
 ++Main2SesionIniciada.vb
@@ -161,6 +167,10 @@ i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoria
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\eliminarcliente.designer.vb
 ++EliminarCliente.resx
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\eliminarcliente.resx
+++FrmAceptarSolicitud.Designer.vb
+i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmaceptarsolicitud.designer.vb
+++FrmAceptarSolicitud.resx
+i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmaceptarsolicitud.resx
 ++FrmAcercaDe.Designer.vb
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmacercade.designer.vb
 ++FrmAcercaDe.resx
@@ -173,8 +183,14 @@ i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoria
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmactualizarclienteadm.designer.vb
 ++FrmActualizarClienteAdm.resx
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmactualizarclienteadm.resx
+++FrmActualizarEmpleados.Designer.vb
+i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmactualizarempleados.designer.vb
+++FrmActualizarEmpleados.resx
+i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmactualizarempleados.resx
 ++FrmAgregarEmpleado.Designer.vb
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmagregarempleado.designer.vb
+++FrmAgregarEmpleado.resx
+i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmagregarempleado.resx
 ++FrmAsignarAsesor.Designer.vb
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmasignarasesor.designer.vb
 ++FrmAsignarAsesor.resx
@@ -187,6 +203,10 @@ i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoria
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmayuda.designer.vb
 ++FrmAyuda.resx
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmayuda.resx
+++FrmConsultarStatus.Designer.vb
+i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmconsultarstatus.designer.vb
+++FrmConsultarStatus.resx
+i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmconsultarstatus.resx
 ++FrmEliminarAsesor.Designer.vb
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmeliminarasesor.designer.vb
 ++FrmEliminarAsesor.resx
@@ -195,6 +215,10 @@ i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoria
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmeliminarclientesadm.designer.vb
 ++FrmEliminarClientesAdm.resx
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmeliminarclientesadm.resx
+++FrmEliminarEmpleados.Designer.vb
+i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmeliminarempleados.designer.vb
+++FrmEliminarEmpleados.resx
+i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmeliminarempleados.resx
 ++FrmIniciarsesionEmpleado.Designer.vb
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frminiciarsesionempleado.designer.vb
 ++FrmIniciarsesionEmpleado.resx
@@ -231,10 +255,6 @@ i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoria
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmseguimientovisualizar.designer.vb
 ++FrmSeguimientoVisualizar.resx
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmseguimientovisualizar.resx
-++IniciarSesion.Designer.vb
-i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\iniciarsesion.designer.vb
-++IniciarSesion.resx
-i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\iniciarsesion.resx
 ++main.Designer.vb
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\main.designer.vb
 ++main.resx
@@ -267,6 +287,8 @@ i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoria
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\solicitarconsultoria.designer.vb
 ++SolicitarConsultoria.resx
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\solicitarconsultoria.resx
+++consultores mnv.png
+i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\img\consultores mnv.png
 ++iniciar sesion.png
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\img\iniciar sesion.png
 ++notificaciones.png
@@ -285,23 +307,3 @@ i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoria
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\bin\debug\consultoriaempresarial.pdb
 ++.NETFramework,Version=v4.7.2.AssemblyAttributes.vb
 i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\obj\debug\.netframework,version=v4.7.2.assemblyattributes.vb
-++FrmAgregarEmpleado.resx
-i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmagregarempleado.resx
-++FrmActualizarEmpleados.vb
-i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmactualizarempleados.vb
-++FrmActualizarEmpleados.Designer.vb
-i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmactualizarempleados.designer.vb
-++FrmActualizarEmpleados.resx
-i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmactualizarempleados.resx
-++FrmEliminarEmpleados.vb
-i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmeliminarempleados.vb
-++FrmEliminarEmpleados.Designer.vb
-i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmeliminarempleados.designer.vb
-++FrmEliminarEmpleados.resx
-i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmeliminarempleados.resx
-++FrmConsultarStatus.vb
-i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmconsultarstatus.vb
-++FrmConsultarStatus.Designer.vb
-i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmconsultarstatus.designer.vb
-++FrmConsultarStatus.resx
-i:{3172594d-29b5-402f-b73e-77c0756ae517}:c:\users\valen\source\repos\consultoriaempresarial\consultoriaempresarial\capa presentacion\frmconsultarstatus.resx

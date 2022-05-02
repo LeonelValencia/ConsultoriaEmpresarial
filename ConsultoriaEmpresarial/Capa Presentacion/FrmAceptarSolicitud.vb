@@ -1,4 +1,6 @@
-﻿Public Class FrmAceptarSolicitud
+﻿Imports System.ComponentModel
+
+Public Class FrmAceptarSolicitud
     Private Sub ConsultarEstados()
         Try
             Dim ls As New LSolConsul
@@ -31,5 +33,9 @@
     End Sub
     Private Sub dgvNece_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvNece.CellClick
         txtIdSol.Text = dgvNece.CurrentRow.Cells(0).Value.ToString
+    End Sub
+
+    Private Sub FrmAceptarSolicitud_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        FrmInicioEmpleado.Show()
     End Sub
 End Class
